@@ -27,14 +27,14 @@ export const PHOTOS = [
   { src: gcamp, caption: "GCaMP fibre schematics​" },
   { src: arntransverse, caption: "Arcuate kisspeptin neurons" },
   { src: rostrocaudal, caption: "Rostro-caudal distribution of GHRH neurons" },
-  { src: calciumimage, caption: "RNA-scop in-situ hybridisation" },
+  { src: calciumimage, caption: "RNAscope in-situ hybridisation" },
   {
     src: miniscopeimaging,
     caption: "Miniscope imaging of kisspeptin neuronal activity",
   },
   {
     src: calciumactivity,
-    caption: "Calcium activity of in vivo GHRH neuron population",
+    caption: "In vivo calcium activity of GHRH neuron population",
   },
 
   { src: lab2026, caption: "Lab photo March 2026" },
