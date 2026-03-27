@@ -20,6 +20,8 @@ export function PubControls({ q, setQ, filterType, setFilterType }) {
           {Ico.search}
         </div>
         <input
+          id="pub-search"
+          name="pub-search"
           className="search-input"
           placeholder="Search title, author, journal, or year…"
           value={q}
