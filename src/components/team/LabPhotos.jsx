@@ -22,7 +22,7 @@ export function LabPhotos() {
       <SH
         eyebrow="Han Lab"
         title="Lab Life"
-        sub="A glimpse into everyday life in Han Lab — from experiments and conferences to group gatherings and life in St Andrews."
+        sub="A glimpse into everyday life in the Han Lab — from experiments and conferences to group gatherings and life in St Andrews."
       />
       <div
         className="lab-photos-strip"
