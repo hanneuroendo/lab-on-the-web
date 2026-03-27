@@ -75,12 +75,13 @@ export function Footer({ setPage }) {
           ))}
         </div>
 
-        {/* Logo + name horizontal */}
+        {/* Logo + name vertical */}
         <div
           style={{
             display: "flex",
+            flexDirection: "column",
             alignItems: "center",
-            gap: 14,
+            gap: 10,
             marginBottom: 12,
           }}
         >
@@ -88,8 +89,8 @@ export function Footer({ setPage }) {
             src={logo}
             alt="Han Lab logo"
             style={{
-              width: 52,
-              height: 52,
+              width: 64,
+              height: 64,
               objectFit: "contain",
               flexShrink: 0,
             }}
@@ -97,7 +98,7 @@ export function Footer({ setPage }) {
               e.currentTarget.style.opacity = "0.3";
             }}
           />
-          <div style={{ textAlign: "left" }}>
+          <div style={{ textAlign: "center" }}>
             <div
               style={{
                 fontFamily: "'Cormorant Garamond',serif",

@@ -15,16 +15,27 @@
 // import labPhoto1 from "../assets/photos/lab-photo-1.jpg";
 import hanlablogo from "../assets/photos/hanlablogo.jpg";
 import gcamp from "../assets/photos/GCaMP.jpg";
-import neuralcircuit from "../assets/photos/neural-circuit-control.jpg";
+import rostrocaudal from "../assets/photos/rostro-caudal.jpg";
 import arntransverse from "../assets/photos/arn-transverse.jpg";
 import calciumimage from "../assets/photos/calcium-image.jpg";
+import calciumactivity from "../assets/photos/calcium-activity.jpg";
+import miniscopeimaging from "../assets/photos/miniscope-imaging.jpg";
 import lab2026 from "../assets/photos/labphoto2026.jpg";
 
 export const PHOTOS = [
-  { src: hanlablogo, caption: "Han Lab logo image" },
-  { src: gcamp, caption: "GCaMP fiber photometry​" },
-  { src: arntransverse, caption: "ARN transverse" },
-  { src: neuralcircuit, caption: "Neural circuit control" },
+  { src: hanlablogo, caption: "Han Lab logo" },
+  { src: gcamp, caption: "GCaMP fibre schematics​" },
+  { src: arntransverse, caption: "Arcuate kisspeptin neurons" },
+  { src: rostrocaudal, caption: "Rostro-caudal distribution of GHRH neurons" },
   { src: calciumimage, caption: "RNA-scop in-situ hybridisation" },
-  { src: lab2026, caption: "4th year students 2026" },
+  {
+    src: miniscopeimaging,
+    caption: "Miniscope imaging of kisspeptin neuronal activity",
+  },
+  {
+    src: calciumactivity,
+    caption: "Calcium activity of in vivo GHRH neuron population",
+  },
+
+  { src: lab2026, caption: "Lab photo March 2026" },
 ];

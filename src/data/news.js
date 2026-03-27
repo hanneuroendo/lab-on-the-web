@@ -14,6 +14,13 @@ export const NEWS = [
     body: "Investigating neural mechanisms underlying endocrine regulation. This prestigious award will provide long-term support for our research into neuroendocrine circuits and hormone dynamics.",
   },
   {
+    date: "February 2026",
+    tags: ["Lab News"],
+    classes: ["tag-lab"],
+    title: "Congratulations on receiving a StARIS internship ",
+    body: "We are excited to have a talented StARIS intern, Laura Varga, joining us to explore the role of dynorphin in kisspeptin neuron synchronisation and its impact on reproductive hormone regulation.",
+  },
+  {
     date: "December 2025",
     tags: ["Funding", "Award"],
     classes: ["tag-funding", "tag-award"],
@@ -24,7 +31,7 @@ export const NEWS = [
     date: "October 2025",
     tags: ["Talk"],
     classes: ["tag-talk"],
-    title: "Invited Talk — Edinburgh Neuroscience Seminar Series",
+    title: "Invited Talk - Edinburgh Neuroscience Seminar Series",
     body: "Dr Han was invited to speak at the Edinburgh Neuroscience Seminar Series Hosted by Dr Mahesh Karnani. ",
   },
   {
@@ -61,12 +68,5 @@ export const NEWS = [
     classes: ["tag-lab"],
     title: "Han Lab set up in St Andrews",
     body: "We are excited to establish our lab at the University of St Andrews in April 2025. We look forward to building a vibrant research group and contributing to the neuroscience community here in St Andrews and beyond.",
-  },
-  {
-    date: "February 2025",
-    tags: ["Lab News"],
-    classes: ["tag-lab"],
-    title: "Congratulations on receiving a StARIS internship ",
-    body: "We are excited to have a talented StARIS intern, Laura Varga, joining us to explore the role of dynorphin in kisspeptin neuron synchronisation and its impact on reproductive hormone regulation.",
   },
 ];
