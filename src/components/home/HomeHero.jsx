@@ -152,7 +152,7 @@ export function HomeHero({ setPage }) {
           className="fu d1"
           style={{
             fontFamily: "'Cormorant Garamond',serif",
-            fontSize: "clamp(48px,7.5vw,88px)",
+            fontSize: "clamp(36px,6vw,88px)",
             fontWeight: 300,
             lineHeight: 1.0,
             color: T.white,
@@ -166,7 +166,7 @@ export function HomeHero({ setPage }) {
           className="fu d2"
           style={{
             fontFamily: "'Cormorant Garamond',serif",
-            fontSize: "clamp(48px,7.5vw,88px)",
+            fontSize: "clamp(36px,6vw,88px)",
             fontWeight: 300,
             lineHeight: 1.0,
             color: T.white,
@@ -181,7 +181,7 @@ export function HomeHero({ setPage }) {
           className="fu d2"
           style={{
             fontFamily: "'Cormorant Garamond',serif",
-            fontSize: "clamp(48px,7.5vw,88px)",
+            fontSize: "clamp(36px,6vw,88px)",
             fontWeight: 300,
             lineHeight: 1.0,
             color: T.white,
