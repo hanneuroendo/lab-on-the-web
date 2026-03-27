@@ -16,7 +16,7 @@ import hamishCampbell from "../assets/members/hamish-campbell.jpg";
 import mimiFoglia from "../assets/members/mimi-foglia.jpg";
 import brynCarney from "../assets/members/bryn-carney.jpg";
 import stevenSeo from "../assets/members/steven-seo.jpg";
-// import lauraVarga from "../assets/members/laura-varga.jpg";
+import lauraVarga from "../assets/members/laura-varga.jpg";
 
 export const TEAM = [
   {
@@ -38,14 +38,14 @@ export const TEAM = [
   },
   {
     initials: "LV",
-    name: "Laura Varga",
+    name: "Laura Kibédi-Varga",
     role: "Internship Student",
     categories: ["Student"],
     bio: [
-      "Laura joined us to explore the role of dynorphin in kisspeptin neuron synchronisation and its impact on reproductive hormone regulation.",
+      "Laura joined us to explore the role of dynorphin in kisspeptin neuron synchronisation and its impact on reproductive hormone regulation. Having been awarded the StARIS internship to work in the lab, she is excited to contribute to this research and deepen her understanding of neuroendocrine mechanisms. She will begin an MPhil in Clinical Neurosciences at the University of Cambridge next year, and sees this experience as an important step in preparing for a PhD later in her academic journey.",
     ],
     color: "#6a7a8a",
-    // photo: lauraVarga,
+    photo: lauraVarga,
   },
   {
     initials: "HC",
