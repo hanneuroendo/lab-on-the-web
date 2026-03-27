@@ -27,10 +27,10 @@ export const COLLABORATORS = [
     department: "Centre for Neuroendocrinology research",
     institution: "University of Otago",
     city: "Dunedin",
-    url: "https://www.otago.ac.nz/anatomy/people/staff/profile?id=1684",
+    url: "https://www.otago.ac.nz/neuroendocrinology/research/joe-yip",
   },
   {
-    name: "Dr. Jaechang Kim",
+    name: "Dr. Jae-Chang Kim",
     role: "Postdoctoral Fellow",
     department: "Department of Experimental Psychology",
     institution: "University of Oxford",
