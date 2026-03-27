@@ -14,7 +14,7 @@ export const POSITIONS = [
     how: "Apply online via the university careers website and quote reference number AR3261. Your application should include a cover letter outlining your interest and experience, a CV, and the names and contacts of three referees.",
   },
   {
-    title: "Masters and PhD Positions",
+    title: "Master's and PhD Positions",
     icon: "mortarboard",
     status: "Enquiries Welcome",
     desc: "We are currently seeking motivated Master’s and PhD students. If you are interested in joining our lab or have any inquiries about available projects, please don’t hesitate to reach out.",
