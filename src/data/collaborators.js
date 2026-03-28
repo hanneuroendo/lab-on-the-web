@@ -24,7 +24,7 @@ export const COLLABORATORS = [
   {
     name: "Dr. Joe Yip",
     role: "Principal Investigator",
-    department: "Centre for Neuroendocrinology research",
+    department: "Centre for Neuroendocrinology Research",
     institution: "University of Otago",
     city: "Dunedin",
     url: "https://www.otago.ac.nz/neuroendocrinology/research/joe-yip",

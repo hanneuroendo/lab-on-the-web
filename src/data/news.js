@@ -18,7 +18,7 @@ export const NEWS = [
     tags: ["Lab News"],
     classes: ["tag-lab"],
     title: "Congratulations on receiving a StARIS internship ",
-    body: "We are excited to have a talented StARIS intern, Laura Varga, joining us to explore the role of dynorphin in kisspeptin neuron synchronisation and its impact on reproductive hormone regulation.",
+    body: "We are excited to have a talented StARIS intern, Laura Kibédi-Varga, joining us to explore the role of dynorphin in kisspeptin neuron synchronisation and its impact on reproductive hormone regulation.",
   },
   {
     date: "December 2025",
