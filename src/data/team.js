@@ -6,6 +6,10 @@
      3. Uncomment the matching photo: field in the member object
    categories options: "Principal Investigator" | "Researcher" | "Student" | "Staff"
    Each member can have multiple categories, e.g. categories: ["Principal Investigator", "Researcher"]
+   To move a member to alumni:
+     1. Add alumni: true
+     2. Add joined: "YYYY" and left: "YYYY"
+     They will be removed from the active grid and appear in the Alumni section.
 ═══════════════════════════════════════════════════════ */
 
 import { T } from "../constants";
