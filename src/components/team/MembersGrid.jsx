@@ -10,7 +10,7 @@ const surname = (name) => name.trim().split(" ").at(-1);
 
 const sorted = [
   ...TEAM.filter((m) => m.isPI),
-  ...TEAM.filter((m) => !m.isPI).sort((a, b) => surname(a.name).localeCompare(surname(b.name))),
+  ...TEAM.filter((m) => !m.isPI && !m.alumni).sort((a, b) => surname(a.name).localeCompare(surname(b.name))),
 ];
 
 function BioModal({ member, onClose }) {
@@ -146,7 +146,7 @@ export function MembersGrid() {
   const navigate = useNavigate();
   const { slug } = useParams();
 
-  const modalMember = slug ? TEAM.find((m) => m.slug === slug) ?? null : null;
+  const modalMember = slug ? TEAM.find((m) => m.slug === slug && !m.alumni) ?? null : null;
 
   const shown = filter === "All" ? sorted : sorted.filter((m) => m.categories.includes(filter));
 
