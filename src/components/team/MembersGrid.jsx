@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { T } from "../../constants";
 import { TEAM } from "../../data/team";
 import { Sec, SH } from "../index";
@@ -38,6 +38,7 @@ function BioModal({ member, onClose }) {
         display: "flex", alignItems: "center", justifyContent: "center",
         padding: "24px 16px",
         animation: "modalFadeIn 0.2s ease both",
+        cursor: "pointer",
       }}
     >
       <div
@@ -147,11 +148,10 @@ function BioModal({ member, onClose }) {
   );
 }
 
-export function MembersGrid() {
+export function MembersGrid({ slug }) {
   const [filter, setFilter] = useState("All");
   const [hoveredImg, setHoveredImg] = useState(null);
   const navigate = useNavigate();
-  const { slug } = useParams();
 
   const isAlumniSlug = slug && TEAM.some((m) => m.slug === slug && m.alumni);
   useEffect(() => {
