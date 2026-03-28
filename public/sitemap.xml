@@ -2,66 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.hanneuroendo.org/</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.hanneuroendo.org/research</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.hanneuroendo.org/publications</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.hanneuroendo.org/team</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.hanneuroendo.org/team/su-young-han</loc>
-    <changefreq>yearly</changefreq>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.hanneuroendo.org/team/laura-kibedi-varga</loc>
-    <changefreq>yearly</changefreq>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.hanneuroendo.org/team/hamish-campbell</loc>
-    <changefreq>yearly</changefreq>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.hanneuroendo.org/team/bryn-carney</loc>
-    <changefreq>yearly</changefreq>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.hanneuroendo.org/team/emma-dawson</loc>
-    <changefreq>yearly</changefreq>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.hanneuroendo.org/team/mimi-foglia</loc>
-    <changefreq>yearly</changefreq>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.hanneuroendo.org/team/steven-seo</loc>
-    <changefreq>yearly</changefreq>
+    <lastmod>2026-03-28</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.hanneuroendo.org/news</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.hanneuroendo.org/join</loc>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
