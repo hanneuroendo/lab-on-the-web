@@ -18,7 +18,7 @@ export function LogoCloud() {
             onMouseLeave={(e) => { e.currentTarget.style.opacity = "0.55"; e.currentTarget.style.filter = "grayscale(100%)"; }}
           >
             {logo ? (
-              <img src={logo} alt={name} style={{ width: "100%", maxWidth: 120, maxHeight: 40, height: "auto", objectFit: "contain" }} />
+              <img src={logo} alt={name} loading="lazy" style={{ width: "100%", maxWidth: 120, maxHeight: 40, height: "auto", objectFit: "contain" }} />
             ) : (
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 6 }}>
                 <span style={{ fontFamily: F.serif, fontSize: "clamp(18px, 2.5vw, 26px)", fontWeight: 600, letterSpacing: "0.04em", color: T.navy, whiteSpace: "nowrap" }}>

@@ -3,10 +3,16 @@ import { PageWrap, PageHero, Footer } from "../components";
 import { PillarSection } from "../components/research/PillarSection";
 import { MethodsGrid } from "../components/research/MethodsGrid";
 import { ResearchCTA } from "../components/research/ResearchCTA";
+import { SEO } from "../components/SEO";
 
 export default function PageResearch() {
   return (
     <PageWrap>
+      <SEO
+        title="Research"
+        url="/research"
+        description="Three interconnected programmes at the intersection of neuroscience and endocrinology."
+      />
       <PageHero
         eyebrow="Han Lab · St Andrews"
         title="Research"

@@ -77,6 +77,7 @@ function BioModal({ member, onClose }) {
               <img
                 src={member.photo}
                 alt={member.name}
+                loading="lazy"
                 style={{
                   width: "100%", height: "100%", objectFit: "cover", display: "block",
                   filter: coloured ? "none" : "grayscale(100%)",
@@ -193,6 +194,7 @@ export function MembersGrid({ slug }) {
                 <img
                   src={m.photo}
                   alt={m.name}
+                  loading="lazy"
                   style={{
                     width: "100%", height: "100%", objectFit: "cover", display: "block",
                     filter: hoveredImg === i ? "none" : "grayscale(100%)",

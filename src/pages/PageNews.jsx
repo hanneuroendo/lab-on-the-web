@@ -3,6 +3,7 @@ import { NEWS } from "../data/news";
 import { PageWrap, Sec, PageHero, Footer } from "../components";
 import { NewsFilters } from "../components/news/NewsFilters";
 import { NewsGrid } from "../components/news/NewsGrid";
+import { SEO } from "../components/SEO";
 
 export default function PageNews() {
   const [filter, setFilter] = useState("All");
@@ -11,6 +12,11 @@ export default function PageNews() {
 
   return (
     <PageWrap>
+      <SEO
+        title="News & Updates"
+        url="/news"
+        description="Recent publications, fundings, awards, talks, and lab updates from Han Lab."
+      />
       <PageHero
         eyebrow="Han Lab · St Andrews"
         title="News & Updates"

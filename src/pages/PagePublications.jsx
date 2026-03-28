@@ -3,6 +3,25 @@ import { PUBS } from "../data/publications";
 import { PageWrap, Sec, PageHero, Footer } from "../components";
 import { PubControls } from "../components/publications/PubControls";
 import { PubList } from "../components/publications/PubList";
+import { SEO } from "../components/SEO";
+
+const PUBS_JSONLD = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Han Lab Publications",
+  itemListElement: PUBS.map((p, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    item: {
+      "@type": "ScholarlyArticle",
+      name: p.title,
+      author: p.authors,
+      datePublished: String(p.year),
+      isPartOf: { "@type": "Periodical", name: p.journal },
+      ...(p.doi ? { identifier: `https://doi.org/${p.doi}`, url: `https://doi.org/${p.doi}` } : {}),
+    },
+  })),
+};
 
 export default function PagePublications() {
   const [q, setQ] = useState("");
@@ -24,6 +43,12 @@ export default function PagePublications() {
 
   return (
     <PageWrap>
+      <SEO
+        title="Publications"
+        url="/publications"
+        description="A selection of published and preprint research and review articles from Han Lab."
+        jsonLd={PUBS_JSONLD}
+      />
       <PageHero
         eyebrow="Han Lab · St Andrews"
         title="Publications"
