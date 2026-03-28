@@ -22,6 +22,7 @@ export default function HanLabApp() {
         <Route path="/research" element={<PageResearch />} />
         <Route path="/publications" element={<PagePublications />} />
         <Route path="/team" element={<PageTeam />} />
+        <Route path="/team/:slug" element={<PageTeam />} />
         <Route path="/join" element={<PageJoin />} />
         <Route path="/news" element={<PageNews />} />
         <Route path="*" element={<PageHome />} />

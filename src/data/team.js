@@ -21,6 +21,7 @@ import lauraVarga from "../assets/members/laura-varga.jpg";
 export const TEAM = [
   {
     initials: "SH",
+    slug: "su-young-han",
     name: "Dr. Su Young Han",
     role: "Principal Investigator",
     categories: ["Principal Investigator", "Researcher"],
@@ -38,6 +39,7 @@ export const TEAM = [
   },
   {
     initials: "LV",
+    slug: "laura-kibedi-varga",
     name: "Laura Kibédi-Varga",
     role: "Internship Student",
     categories: ["Student"],
@@ -49,6 +51,7 @@ export const TEAM = [
   },
   {
     initials: "HC",
+    slug: "hamish-campbell",
     name: "Hamish Campbell",
     role: "Undergraduate Student",
     categories: ["Student"],
@@ -60,6 +63,7 @@ export const TEAM = [
   },
   {
     initials: "BC",
+    slug: "bryn-carney",
     name: "Bryn Carney",
     role: "Undergraduate Student",
     categories: ["Student"],
@@ -71,6 +75,7 @@ export const TEAM = [
   },
   {
     initials: "ED",
+    slug: "emma-dawson",
     name: "Emma Dawson",
     role: "Undergraduate Student",
     categories: ["Student"],
@@ -82,6 +87,7 @@ export const TEAM = [
   },
   {
     initials: "MF",
+    slug: "mimi-foglia",
     name: "Mimi Foglia",
     role: "Undergraduate Student",
     categories: ["Student"],
@@ -93,6 +99,7 @@ export const TEAM = [
   },
   {
     initials: "SS",
+    slug: "steven-seo",
     name: "Steven Seo",
     role: "Operations and Data Manager",
     categories: ["Staff"],

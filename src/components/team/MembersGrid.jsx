@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { T } from "../../constants";
 import { TEAM } from "../../data/team";
 import { Sec, SH } from "../index";
@@ -142,7 +143,10 @@ function BioModal({ member, onClose }) {
 export function MembersGrid() {
   const [filter, setFilter] = useState("All");
   const [hoveredImg, setHoveredImg] = useState(null);
-  const [modalMember, setModalMember] = useState(null);
+  const navigate = useNavigate();
+  const { slug } = useParams();
+
+  const modalMember = slug ? TEAM.find((m) => m.slug === slug) ?? null : null;
 
   const shown = filter === "All" ? sorted : sorted.filter((m) => m.categories.includes(filter));
 
@@ -155,7 +159,7 @@ export function MembersGrid() {
           <div
             key={m.name}
             className="card"
-            onClick={() => setModalMember(m)}
+            onClick={() => navigate(`/team/${m.slug}`)}
             onMouseEnter={() => setHoveredImg(i)}
             onMouseLeave={() => setHoveredImg(null)}
             style={{
@@ -214,7 +218,7 @@ export function MembersGrid() {
           </p>
         )}
       </div>
-      {modalMember && <BioModal member={modalMember} onClose={() => setModalMember(null)} />}
+      {modalMember && <BioModal member={modalMember} onClose={() => navigate("/team")} />}
     </Sec>
   );
 }
