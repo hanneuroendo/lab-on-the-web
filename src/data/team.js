@@ -6,6 +6,7 @@
      3. Uncomment the matching photo: field in the member object
    categories options: "Principal Investigator" | "Researcher" | "Student" | "Staff"
    Each member can have multiple categories, e.g. categories: ["Principal Investigator", "Researcher"]
+   project: optional short project name, shown in bio modal and alumni section
    To move a member to alumni:
      1. Add alumni: true
      2. Add joined: "YYYY" and left: "YYYY"
@@ -38,6 +39,7 @@ export const TEAM = [
     ],
     color: T.navy,
     // email: ["sh413", "st-andrews.ac.uk"].join("@"),
+    // project: "",
     isPI: true,
     photo: suYoungHan,
   },
@@ -52,6 +54,8 @@ export const TEAM = [
     ],
     color: "#6a7a8a",
     photo: lauraVarga,
+    // project: "",
+    // alumni: true, joined: "YYYY", left: "YYYY",
   },
   {
     initials: "HC",
@@ -64,6 +68,8 @@ export const TEAM = [
     ],
     color: "#6a7a8a",
     photo: hamishCampbell,
+    // project: "",
+    // alumni: true, joined: "YYYY", left: "YYYY",
   },
   {
     initials: "BC",
@@ -76,6 +82,8 @@ export const TEAM = [
     ],
     color: "#6a7a8a",
     photo: brynCarney,
+    // project: "",
+    // alumni: true, joined: "YYYY", left: "YYYY",
   },
   {
     initials: "ED",
@@ -88,6 +96,8 @@ export const TEAM = [
     ],
     color: "#6a7a8a",
     photo: emmaDawson,
+    // project: "",
+    // alumni: true, joined: "YYYY", left: "YYYY",
   },
   {
     initials: "MF",
@@ -100,6 +110,10 @@ export const TEAM = [
     ],
     color: "#6a7a8a",
     photo: mimiFoglia,
+    alumni: true,
+    joined: "2026",
+    left: "2027",
+    project: "growth hormone investion in mouse model",
   },
   {
     initials: "SS",
@@ -112,5 +126,7 @@ export const TEAM = [
     ],
     color: "#6a7a8a",
     photo: stevenSeo,
+    // project: "",
+    // alumni: true, joined: "YYYY", left: "YYYY",
   },
 ];

@@ -8,6 +8,17 @@ import { TeamFilters } from "./TeamFilters";
 
 const surname = (name) => name.trim().split(" ").at(-1);
 
+export const roleColor = (role) => {
+  const r = role.toLowerCase();
+  if (r.includes("principal investigator")) return { background: T.navy,                          color: T.white,      border: T.navy };
+  if (r.includes("postdoc") || r.includes("research fellow")) return { background: "rgba(47,72,88,0.1)",  color: T.navyDark,   border: "rgba(47,72,88,0.25)" };
+  if (r.includes("phd"))                  return { background: "rgba(61,143,166,0.15)", color: "#1e6a80",    border: "rgba(61,143,166,0.35)" };
+  if (r.includes("mphil") || r.includes("masters") || r.includes("master")) return { background: "rgba(61,143,166,0.08)", color: T.teal,       border: "rgba(61,143,166,0.2)" };
+  if (r.includes("undergraduate") || r.includes("intern")) return { background: T.tealPale,                color: T.teal,       border: "rgba(61,143,166,0.15)" };
+  if (r.includes("staff") || r.includes("manager") || r.includes("operations")) return { background: T.slatePale,               color: T.slate,      border: T.slatePale };
+  return { background: T.tealPale, color: T.teal, border: "rgba(61,143,166,0.15)" };
+};
+
 const sorted = [
   ...TEAM.filter((m) => m.isPI),
   ...TEAM.filter((m) => !m.isPI && !m.alumni).sort((a, b) => surname(a.name).localeCompare(surname(b.name))),
@@ -89,9 +100,10 @@ function BioModal({ member, onClose }) {
             <span
               className="pill"
               style={{
-                background: "rgba(61,143,166,0.08)", color: T.teal,
-                border: "1px solid rgba(61,143,166,0.15)", marginBottom: 8,
-                display: "inline-block",
+                background: roleColor(member.role).background,
+                color: roleColor(member.role).color,
+                border: `1px solid ${roleColor(member.role).border}`,
+                marginBottom: 8, display: "inline-block",
               }}
             >
               {member.role}
@@ -99,6 +111,11 @@ function BioModal({ member, onClose }) {
             <h3 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 26, fontWeight: 500, color: T.navy, lineHeight: 1.1 }}>
               {member.name}
             </h3>
+            {member.project && (
+              <p style={{ fontFamily: "'Inter',sans-serif", fontSize: 12.5, fontWeight: 300, color: T.slateLight, marginTop: 12 }}>
+                <span style={{ fontWeight: 500 }}>Project:</span> {member.project}
+              </p>
+            )}
           </div>
           <button
             onClick={onClose}
@@ -189,7 +206,12 @@ export function MembersGrid() {
             </div>
             <span
               className="pill"
-              style={{ background: "rgba(61,143,166,0.08)", color: T.teal, border: "1px solid rgba(61,143,166,0.15)", marginBottom: 10 }}
+              style={{
+                background: roleColor(m.role).background,
+                color: roleColor(m.role).color,
+                border: `1px solid ${roleColor(m.role).border}`,
+                marginBottom: 10,
+              }}
             >
               {m.role}
             </span>
