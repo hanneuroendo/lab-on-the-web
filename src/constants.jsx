@@ -19,6 +19,15 @@ export const T = {
   white: "#ffffff",
 };
 
+/* ── Typography ── */
+export const F = {
+  serif: "'Cormorant Garamond', serif",
+  sans: "'Inter', sans-serif",
+  mono: "'JetBrains Mono', monospace",
+};
+
+export const CONTAINER_MAX_WIDTH = 1160;
+
 /* ── Pages ── */
 export const PAGES = [
   "home",

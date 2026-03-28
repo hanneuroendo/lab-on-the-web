@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import NeuralGrid from "./NeuralGrid";
-import { T, Ico } from "../../constants";
+import { T, Ico, F, CONTAINER_MAX_WIDTH } from "../../constants";
 
 export function HomeHero() {
   const navigate = useNavigate();
@@ -101,7 +101,7 @@ export function HomeHero() {
       {/* ── LAYER 3: Hero Content ── */}
       <div
         style={{
-          maxWidth: 1160,
+          maxWidth: CONTAINER_MAX_WIDTH,
           margin: "0 auto",
           padding:
             "clamp(90px, 14vh, 160px) clamp(20px, 5vw, 32px) clamp(80px, 15vh, 160px)",
@@ -137,15 +137,14 @@ export function HomeHero() {
           />
           <span
             style={{
-              fontFamily: "'Inter',sans-serif",
+              fontFamily: F.sans,
               fontSize: 10.5,
               letterSpacing: "0.15em",
               textTransform: "uppercase",
               color: "rgba(255,255,255,0.85)",
             }}
           >
-            University of St Andrews &ensp;·&ensp; School of Psychology &amp;
-            Neuroscience
+            University of St Andrews · School of Psychology & Neuroscience
           </span>
         </div>
 
@@ -153,7 +152,7 @@ export function HomeHero() {
         <h1
           className="fu d1"
           style={{
-            fontFamily: "'Cormorant Garamond',serif",
+            fontFamily: F.serif,
             fontSize: "clamp(36px,6vw,88px)",
             fontWeight: 300,
             lineHeight: 1.0,
@@ -167,7 +166,7 @@ export function HomeHero() {
         <h1
           className="fu d2"
           style={{
-            fontFamily: "'Cormorant Garamond',serif",
+            fontFamily: F.serif,
             fontSize: "clamp(36px,6vw,88px)",
             fontWeight: 300,
             lineHeight: 1.0,
@@ -182,7 +181,7 @@ export function HomeHero() {
         <h1
           className="fu d2"
           style={{
-            fontFamily: "'Cormorant Garamond',serif",
+            fontFamily: F.serif,
             fontSize: "clamp(36px,6vw,88px)",
             fontWeight: 300,
             lineHeight: 1.0,
@@ -199,7 +198,7 @@ export function HomeHero() {
         <p
           className="fu d3"
           style={{
-            fontFamily: "'Inter',sans-serif",
+            fontFamily: F.sans,
             fontSize: 16,
             fontWeight: 300,
             lineHeight: 1.8,

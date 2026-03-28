@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { T, Ico } from "../../constants";
+import { T, Ico, F } from "../../constants";
 import { Sec } from "../index";
 
 export function ResearchCTA() {
@@ -16,13 +16,13 @@ export function ResearchCTA() {
         }}
       >
         <div>
-          <p style={{ fontFamily: "'Inter',sans-serif", fontSize: 10, letterSpacing: "0.2em", textTransform: "uppercase", color: T.slateLight, marginBottom: 12 }}>
+          <p style={{ fontFamily: F.sans, fontSize: 10, letterSpacing: "0.2em", textTransform: "uppercase", color: T.slateLight, marginBottom: 12 }}>
             What's next
           </p>
-          <h3 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: T.navy, marginBottom: 10 }}>
+          <h3 style={{ fontFamily: F.serif, fontSize: "clamp(24px,3vw,36px)", fontWeight: 400, color: T.navy, marginBottom: 10 }}>
             Explore our publications or join the lab
           </h3>
-          <p style={{ fontFamily: "'Inter',sans-serif", fontSize: 15, fontWeight: 300, color: T.slateLight, maxWidth: 480 }}>
+          <p style={{ fontFamily: F.sans, fontSize: 15, fontWeight: 300, color: T.slateLight, maxWidth: 480 }}>
             Read our latest research findings or find out about opportunities to work with us.
           </p>
         </div>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { T } from "../../constants";
+import { T, F } from "../../constants";
 import { TEAM } from "../../data/team";
 import { Sec, SH } from "../index";
 import { roleColor } from "../../utils/roleColor";
@@ -52,7 +52,7 @@ export function AlumniSection() {
                     transition: "background 0.15s",
                   }}
                 >
-                  <span style={{ fontFamily: "'Inter',sans-serif", fontSize: 13, fontWeight: 500, color: T.navy }}>
+                  <span style={{ fontFamily: F.sans, fontSize: 13, fontWeight: 500, color: T.navy }}>
                     {key}
                     <span style={{ fontWeight: 300, color: T.slateLight, marginLeft: 10 }}>
                       {members.length} {members.length === 1 ? "member" : "members"}
@@ -66,7 +66,7 @@ export function AlumniSection() {
                 {/* Collapsible table */}
                 {isOpen && (
                   <div style={{ overflowX: "auto", marginTop: 2 }}>
-                    <table style={{ width: "100%", borderCollapse: "collapse", fontFamily: "'Inter',sans-serif" }}>
+                    <table style={{ width: "100%", borderCollapse: "collapse", fontFamily: F.sans }}>
                       <thead>
                         <tr style={{ borderBottom: `2px solid ${T.slatePale}` }}>
                           <th style={{ textAlign: "left", padding: "8px 16px 10px 16px", fontSize: 11, fontWeight: 500, letterSpacing: "0.1em", textTransform: "uppercase", color: T.slateLight }}>Name</th>
@@ -81,7 +81,7 @@ export function AlumniSection() {
                         {members.map((m) => (
                           <tr key={m.slug} style={{ borderBottom: `1px solid ${T.slatePale}` }}>
                             <td style={{ padding: "12px 16px 12px 16px", verticalAlign: "middle" }}>
-                              <span style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 18, fontWeight: 500, color: T.navy }}>
+                              <span style={{ fontFamily: F.serif, fontSize: 18, fontWeight: 500, color: T.navy }}>
                                 {m.name}
                               </span>
                             </td>

@@ -1,4 +1,4 @@
-import { T } from "../../constants";
+import { T, F } from "../../constants";
 import { Sec, SH } from "../index";
 
 const offerings = [
@@ -48,7 +48,7 @@ export function WhatWeOffer() {
             />
             <h3
               style={{
-                fontFamily: "'Cormorant Garamond',serif",
+                fontFamily: F.serif,
                 fontSize: 18,
                 fontWeight: 500,
                 color: T.navy,
@@ -59,7 +59,7 @@ export function WhatWeOffer() {
             </h3>
             <p
               style={{
-                fontFamily: "'Inter',sans-serif",
+                fontFamily: F.sans,
                 fontSize: 13.5,
                 fontWeight: 300,
                 color: T.slate,

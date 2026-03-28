@@ -10,7 +10,7 @@
 ═══════════════════════════════════════════════════════ */
 
 import { useState } from "react";
-import { T } from "../../constants";
+import { T, F } from "../../constants";
 import { PHOTOS } from "../../data/photos";
 import { Sec, SH } from "../index";
 
@@ -37,7 +37,7 @@ export function LabPhotos() {
       >
         {PHOTOS.map((p, i) => (
           <div
-            key={i}
+            key={p.src ?? p.caption}
             style={{
               flex: "0 0 200px",
               borderRadius: 8,
@@ -68,7 +68,7 @@ export function LabPhotos() {
               {!p.src && (
                 <span
                   style={{
-                    fontFamily: "'Inter',sans-serif",
+                    fontFamily: F.sans,
                     fontSize: 12,
                     color: T.slateLight,
                   }}
@@ -80,7 +80,7 @@ export function LabPhotos() {
             {p.caption && (
               <p
                 style={{
-                  fontFamily: "'Inter',sans-serif",
+                  fontFamily: F.sans,
                   fontSize: 12,
                   fontWeight: 300,
                   color: T.slateLight,

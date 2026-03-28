@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { T } from "../../constants";
+import { T, F, CONTAINER_MAX_WIDTH } from "../../constants";
 import { NAV_LINKS } from "../../data/navigation";
 import logo from "../../assets/logo-dark.svg";
 
@@ -41,7 +41,7 @@ export function Footer() {
     <footer style={{ background: T.navyDeep, color: T.white }}>
       <div
         style={{
-          maxWidth: 1160,
+          maxWidth: CONTAINER_MAX_WIDTH,
           margin: "0 auto",
           padding: "clamp(48px,6vw,72px) clamp(20px,5vw,32px) 36px",
           display: "flex",
@@ -68,7 +68,7 @@ export function Footer() {
                 background: "none",
                 border: "none",
                 cursor: "pointer",
-                fontFamily: "'Inter',sans-serif",
+                fontFamily: F.sans,
                 fontSize: 13,
                 fontWeight: 400,
                 letterSpacing: "0.02em",
@@ -112,7 +112,7 @@ export function Footer() {
           <div style={{ textAlign: "center" }}>
             <div
               style={{
-                fontFamily: "'Cormorant Garamond',serif",
+                fontFamily: F.serif,
                 fontSize: 26,
                 fontWeight: 400,
                 color: T.white,
@@ -124,7 +124,7 @@ export function Footer() {
             </div>
             <div
               style={{
-                fontFamily: "'Inter',sans-serif",
+                fontFamily: F.sans,
                 fontSize: 9.5,
                 letterSpacing: "0.2em",
                 textTransform: "uppercase",
@@ -139,7 +139,7 @@ export function Footer() {
         {/* Address */}
         <p
           style={{
-            fontFamily: "'Inter',sans-serif",
+            fontFamily: F.sans,
             fontSize: 12.5,
             fontWeight: 300,
             color: "rgba(255,255,255,0.55)",
@@ -147,7 +147,7 @@ export function Footer() {
             marginBottom: 28,
           }}
         >
-          School of Psychology &amp; Neuroscience · University of St Andrews
+          School of Psychology & Neuroscience · University of St Andrews
           <br />
           St Mary's Quad, South Street · St Andrews, Fife KY16 9JP · United
           Kingdom
@@ -196,7 +196,7 @@ export function Footer() {
         >
           <p
             style={{
-              fontFamily: "'Inter',sans-serif",
+              fontFamily: F.sans,
               fontSize: 12,
               fontWeight: 300,
               color: "rgba(255,255,255,0.5)",
@@ -213,7 +213,7 @@ export function Footer() {
               borderRadius: 4,
               cursor: "pointer",
               padding: "6px 14px",
-              fontFamily: "'Inter',sans-serif",
+              fontFamily: F.sans,
               fontSize: 11.5,
               fontWeight: 400,
               letterSpacing: "0.05em",

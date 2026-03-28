@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { T, Ico } from "../../constants";
+import { T, Ico, F } from "../../constants";
 import { Sec, SH } from "../index";
 
 const pillars = [
@@ -57,7 +57,7 @@ export function ResearchTeaser() {
               <div className="icon-ring">{p.icon}</div>
               <span
                 style={{
-                  fontFamily: "'Cormorant Garamond',serif",
+                  fontFamily: F.serif,
                   fontSize: 44,
                   fontWeight: 300,
                   color: "rgba(61,143,166,0.2)",
@@ -69,7 +69,7 @@ export function ResearchTeaser() {
             </div>
             <h3
               style={{
-                fontFamily: "'Cormorant Garamond',serif",
+                fontFamily: F.serif,
                 fontSize: 20,
                 fontWeight: 500,
                 color: T.navy,
@@ -80,7 +80,7 @@ export function ResearchTeaser() {
             </h3>
             <p
               style={{
-                fontFamily: "'Inter',sans-serif",
+                fontFamily: F.sans,
                 fontSize: 13.5,
                 fontWeight: 300,
                 color: T.slate,

@@ -12,7 +12,6 @@
      - File size: keep under 300KB (export at ~80% JPEG quality)
 ═══════════════════════════════════════════════════════ */
 
-// import labPhoto1 from "../assets/photos/lab-photo-1.jpg";
 import hanlablogo from "../assets/photos/hanlablogo.jpg";
 import gcamp from "../assets/photos/GCaMP.jpg";
 import rostrocaudal from "../assets/photos/rostro-caudal.jpg";
@@ -24,7 +23,7 @@ import lab2026 from "../assets/photos/labphoto2026.jpg";
 
 export const PHOTOS = [
   { src: hanlablogo, caption: "Han Lab logo" },
-  { src: gcamp, caption: "GCaMP fibre schematics​" },
+  { src: gcamp, caption: "GCaMP fibre schematics" },
   { src: arntransverse, caption: "Arcuate kisspeptin neurons" },
   { src: rostrocaudal, caption: "Rostro-caudal distribution of GHRH neurons" },
   { src: calciumimage, caption: "RNAscope in-situ hybridisation" },

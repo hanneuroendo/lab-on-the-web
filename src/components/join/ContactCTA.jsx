@@ -1,4 +1,4 @@
-import { T, Ico } from "../../constants";
+import { T, Ico, F } from "../../constants";
 import { Sec } from "../index";
 import { drHanEmail, mailtoHan } from "../../utils/email";
 
@@ -8,7 +8,7 @@ export function ContactCTA() {
       <div style={{ textAlign: "center", maxWidth: 600, margin: "0 auto" }}>
         <p
           style={{
-            fontFamily: "'Inter',sans-serif",
+            fontFamily: F.sans,
             fontSize: 10,
             letterSpacing: "0.2em",
             textTransform: "uppercase",
@@ -20,7 +20,7 @@ export function ContactCTA() {
         </p>
         <h2
           style={{
-            fontFamily: "'Cormorant Garamond',serif",
+            fontFamily: F.serif,
             fontSize: "clamp(28px,3.5vw,42px)",
             fontWeight: 400,
             color: T.white,
@@ -31,7 +31,7 @@ export function ContactCTA() {
         </h2>
         <p
           style={{
-            fontFamily: "'Inter',sans-serif",
+            fontFamily: F.sans,
             fontSize: 15,
             fontWeight: 300,
             color: "rgba(255,255,255,0.45)",
@@ -51,7 +51,7 @@ export function ContactCTA() {
         </a>
         <p
           style={{
-            fontFamily: "'Inter',sans-serif",
+            fontFamily: F.sans,
             fontSize: 12,
             fontWeight: 300,
             color: "rgba(255,255,255,0.5)",

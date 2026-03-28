@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { T, Ico } from "../../constants";
+import { T, Ico, F } from "../../constants";
 import { NEWS } from "../../data/news";
 import { Sec, SH } from "../index";
 
@@ -55,7 +55,7 @@ export function NewsStrip() {
               </div>
               <span
                 style={{
-                  fontFamily: "'Inter',sans-serif",
+                  fontFamily: F.sans,
                   fontSize: 11,
                   color: T.slateLight,
                 }}
@@ -65,7 +65,7 @@ export function NewsStrip() {
             </div>
             <h3
               style={{
-                fontFamily: "'Cormorant Garamond',serif",
+                fontFamily: F.serif,
                 fontSize: 19,
                 fontWeight: 500,
                 color: T.navy,
@@ -77,7 +77,7 @@ export function NewsStrip() {
             </h3>
             <p
               style={{
-                fontFamily: "'Inter',sans-serif",
+                fontFamily: F.sans,
                 fontSize: 13,
                 fontWeight: 300,
                 color: T.slate,

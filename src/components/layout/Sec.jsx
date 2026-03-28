@@ -1,9 +1,9 @@
-import { T } from "../../constants";
+import { T, F, CONTAINER_MAX_WIDTH } from "../../constants";
 
 export function Sec({ children, bg = T.offWhite, style = {}, id }) {
   return (
     <section id={id} style={{ background: bg, padding: "80px 0", ...style }}>
-      <div style={{ maxWidth: 1160, margin: "0 auto", padding: "0 32px" }}>
+      <div style={{ maxWidth: CONTAINER_MAX_WIDTH, margin: "0 auto", padding: "0 32px" }}>
         {children}
       </div>
     </section>
@@ -34,7 +34,7 @@ export function SH({ eyebrow, title, sub, light = false, center = false, gold = 
       />
       <h2
         style={{
-          fontFamily: "'Cormorant Garamond',serif",
+          fontFamily: F.serif,
           fontSize: "clamp(28px,3.5vw,40px)",
           fontWeight: 400,
           letterSpacing: "-0.01em",
@@ -48,7 +48,7 @@ export function SH({ eyebrow, title, sub, light = false, center = false, gold = 
       {sub && (
         <p
           style={{
-            fontFamily: "'Inter',sans-serif",
+            fontFamily: F.sans,
             fontSize: 15,
             fontWeight: 300,
             lineHeight: 1.75,

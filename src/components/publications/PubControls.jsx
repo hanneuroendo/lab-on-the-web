@@ -1,4 +1,4 @@
-import { T, Ico } from "../../constants";
+import { T, Ico, F } from "../../constants";
 import { TYPE_COLORS } from "./pubTypes";
 
 export function PubControls({ q, setQ, filterType, setFilterType }) {
@@ -47,7 +47,7 @@ export function PubControls({ q, setQ, filterType, setFilterType }) {
                 padding: "9px 18px",
                 borderRadius: 4,
                 cursor: "pointer",
-                fontFamily: "'Inter',sans-serif",
+                fontFamily: F.sans,
                 fontSize: 13,
                 fontWeight: 400,
                 transition: "background 0.18s, color 0.18s, border-color 0.18s",

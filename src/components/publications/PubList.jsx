@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { T, Ico } from "../../constants";
+import { T, Ico, F } from "../../constants";
 import { TYPE_COLORS } from "./pubTypes";
 
 export function PubList({ shown, q }) {
@@ -13,14 +13,14 @@ export function PubList({ shown, q }) {
 
   return (
     <>
-      <p style={{ fontFamily: "'Inter',sans-serif", fontSize: 12, color: T.slateLight, marginBottom: 28, letterSpacing: "0.03em" }}>
+      <p style={{ fontFamily: F.sans, fontSize: 12, color: T.slateLight, marginBottom: 28, letterSpacing: "0.03em" }}>
         {shown.length} publication{shown.length !== 1 ? "s" : ""}
         {q ? ` matching "${q}"` : ""}
       </p>
 
       {years.length === 0 ? (
         <div style={{ textAlign: "center", padding: "64px 0" }}>
-          <p style={{ fontFamily: "'Inter',sans-serif", fontSize: 15, color: T.slateLight }}>
+          <p style={{ fontFamily: F.sans, fontSize: 15, color: T.slateLight }}>
             No publications match your search.
           </p>
         </div>
@@ -28,7 +28,7 @@ export function PubList({ shown, q }) {
         years.map((yr) => (
           <div key={yr} style={{ marginBottom: 40 }}>
             <div style={{ display: "flex", alignItems: "center", gap: 20, marginBottom: 4 }}>
-              <span style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 32, fontWeight: 300, color: T.navy, letterSpacing: "-0.02em", minWidth: 52 }}>
+              <span style={{ fontFamily: F.serif, fontSize: 32, fontWeight: 300, color: T.navy, letterSpacing: "-0.02em", minWidth: 52 }}>
                 {yr}
               </span>
               <div style={{ flex: 1, height: 1, background: T.slatePale }} />
@@ -41,14 +41,14 @@ export function PubList({ shown, q }) {
               >
                 <div style={{ display: "flex", gap: 16, alignItems: "flex-start" }}>
                   <div style={{ flex: 1, minWidth: 0 }}>
-                    <div style={{ fontFamily: "'Inter',sans-serif", fontSize: 14.5, fontWeight: 400, color: T.navy, lineHeight: 1.55, marginBottom: 6 }}>
+                    <div style={{ fontFamily: F.sans, fontSize: 14.5, fontWeight: 400, color: T.navy, lineHeight: 1.55, marginBottom: 6 }}>
                       {p.title}
                     </div>
-                    <div style={{ fontFamily: "'Inter',sans-serif", fontSize: 12.5, fontWeight: 300, color: T.slate, marginBottom: 4 }}>
+                    <div style={{ fontFamily: F.sans, fontSize: 12.5, fontWeight: 300, color: T.slate, marginBottom: 4 }}>
                       {p.authors}
                     </div>
                     <div style={{ display: "flex", alignItems: "center", gap: 12, flexWrap: "wrap" }}>
-                      <span style={{ fontFamily: "'Inter',sans-serif", fontSize: 12.5, fontStyle: "italic", color: T.slateLight }}>
+                      <span style={{ fontFamily: F.sans, fontSize: 12.5, fontStyle: "italic", color: T.slateLight }}>
                         {p.journal}, {p.vol}
                       </span>
                       <span
@@ -71,7 +71,7 @@ export function PubList({ shown, q }) {
                       style={{
                         flexShrink: 0, alignSelf: "flex-start", marginTop: 2,
                         display: "inline-flex", alignItems: "center", gap: 5,
-                        fontFamily: "'Inter',sans-serif", fontSize: 12, color: T.teal,
+                        fontFamily: F.sans, fontSize: 12, color: T.teal,
                         textDecoration: "none", padding: "5px 14px", borderRadius: 3,
                         border: "1px solid rgba(61,143,166,0.3)", whiteSpace: "nowrap",
                         transition: "background 0.18s",

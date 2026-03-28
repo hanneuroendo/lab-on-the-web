@@ -1,4 +1,4 @@
-import { T } from "../../constants";
+import { T, F } from "../../constants";
 import { Sec, SH } from "../index";
 
 export function MethodsGrid() {
@@ -7,7 +7,7 @@ export function MethodsGrid() {
       <SH eyebrow="Approaches" title="Methods & Techniques" light />
       <p
         style={{
-          fontFamily: "'Inter',sans-serif",
+          fontFamily: F.sans,
           fontSize: 15,
           fontWeight: 300,
           color: "rgba(255,255,255,0.6)",

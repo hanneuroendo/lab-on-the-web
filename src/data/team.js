@@ -23,6 +23,8 @@ import brynCarney from "../assets/members/bryn-carney.jpg";
 import stevenSeo from "../assets/members/steven-seo.jpg";
 import lauraVarga from "../assets/members/laura-varga.jpg";
 
+export const TEAM_CATEGORIES = ["All", "Principal Investigator", "Researcher", "Student", "Staff"];
+
 export const TEAM = [
   {
     initials: "SH",
@@ -68,7 +70,7 @@ export const TEAM = [
     ],
     color: "#6a7a8a",
     photo: hamishCampbell,
-    project: "Validation of an ultra-sensitive ELISA for mouse GH​",
+    project: "Validation of an ultra-sensitive ELISA for mouse GH",
     // alumni: true, joined: "YYYY", left: "YYYY",
   },
   {
@@ -82,7 +84,7 @@ export const TEAM = [
     ],
     color: "#6a7a8a",
     photo: brynCarney,
-    project: "Validation of an ultra-sensitive ELISA for mouse GH​",
+    project: "Validation of an ultra-sensitive ELISA for mouse GH",
     // alumni: true, joined: "YYYY", left: "YYYY",
   },
   {

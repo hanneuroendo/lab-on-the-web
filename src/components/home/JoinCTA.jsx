@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { T, Ico } from "../../constants";
+import { T, Ico, F } from "../../constants";
 import { Sec } from "../index";
 
 export function JoinCTA() {
@@ -18,7 +18,7 @@ export function JoinCTA() {
         <div>
           <p
             style={{
-              fontFamily: "'Inter',sans-serif",
+              fontFamily: F.sans,
               fontSize: 10,
               letterSpacing: "0.2em",
               textTransform: "uppercase",
@@ -30,7 +30,7 @@ export function JoinCTA() {
           </p>
           <h2
             style={{
-              fontFamily: "'Cormorant Garamond',serif",
+              fontFamily: F.serif,
               fontSize: "clamp(26px,3vw,38px)",
               fontWeight: 400,
               color: T.white,
@@ -41,7 +41,7 @@ export function JoinCTA() {
           </h2>
           <p
             style={{
-              fontFamily: "'Inter',sans-serif",
+              fontFamily: F.sans,
               fontSize: 15,
               fontWeight: 300,
               color: "rgba(255,255,255,0.45)",

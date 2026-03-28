@@ -13,7 +13,7 @@ export default function PageNews() {
     <PageWrap>
       <PageHero
         eyebrow="Han Lab · St Andrews"
-        title="News &amp; Updates"
+        title="News & Updates"
         sub="Recent publications, fundings, awards, talks, and lab updates."
       />
 

@@ -1,4 +1,4 @@
-import { T } from "../../constants";
+import { T, F } from "../../constants";
 import { POSITIONS } from "../../data/positions";
 import { Sec } from "../index";
 
@@ -8,15 +8,15 @@ export function PositionsGrid() {
       <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
         {POSITIONS.map((pos) => (
           <div key={pos.title} style={{ background: T.offWhite, borderRadius: 10, padding: "40px 48px", border: `1px solid ${T.slatePale}` }}>
-            <div style={{ flex: 1 }}>
+            <div>
                 <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 12 }}>
-                  <h2 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 28, fontWeight: 500, color: T.navy, letterSpacing: "-0.01em" }}>
+                  <h2 style={{ fontFamily: F.serif, fontSize: 28, fontWeight: 500, color: T.navy, letterSpacing: "-0.01em" }}>
                     {pos.title}
                   </h2>
                   {pos.status && (
                     <span style={{
                       flexShrink: 0,
-                      fontFamily: "'Inter',sans-serif",
+                      fontFamily: F.sans,
                       fontSize: 11,
                       fontWeight: 500,
                       letterSpacing: "0.08em",
@@ -31,16 +31,16 @@ export function PositionsGrid() {
                     </span>
                   )}
                 </div>
-                <p style={{ fontFamily: "'Inter',sans-serif", fontSize: 14, fontWeight: 300, color: T.slate, lineHeight: 1.8, marginBottom: 28 }}>
+                <p style={{ fontFamily: F.sans, fontSize: 14, fontWeight: 300, color: T.slate, lineHeight: 1.8, marginBottom: 28 }}>
                   {pos.desc}
                 </p>
                 {pos.reqs?.length > 0 && <>
-                  <p style={{ fontFamily: "'Inter',sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.14em", textTransform: "uppercase", color: T.teal, marginBottom: 14 }}>
+                  <p style={{ fontFamily: F.sans, fontSize: 11, fontWeight: 500, letterSpacing: "0.14em", textTransform: "uppercase", color: T.teal, marginBottom: 14 }}>
                     We are looking for
                   </p>
                   <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: 9, marginBottom: 28 }}>
                     {pos.reqs.map((r, j) => (
-                      <li key={j} style={{ display: "flex", gap: 14, alignItems: "flex-start", fontFamily: "'Inter',sans-serif", fontSize: 13.5, fontWeight: 300, color: T.slate, lineHeight: 1.55 }}>
+                      <li key={j} style={{ display: "flex", gap: 14, alignItems: "flex-start", fontFamily: F.sans, fontSize: 13.5, fontWeight: 300, color: T.slate, lineHeight: 1.55 }}>
                         <span style={{ color: T.gold, flexShrink: 0, marginTop: 1, fontWeight: 500 }}>—</span>
                         {r}
                       </li>
@@ -48,10 +48,10 @@ export function PositionsGrid() {
                   </ul>
                 </>}
                 {pos.how && <div style={{ background: T.white, borderRadius: 8, padding: "20px 24px", border: `1px solid ${T.slatePale}` }}>
-                  <p style={{ fontFamily: "'Inter',sans-serif", fontSize: 11, fontWeight: 500, letterSpacing: "0.14em", textTransform: "uppercase", color: T.teal, marginBottom: 10 }}>
+                  <p style={{ fontFamily: F.sans, fontSize: 11, fontWeight: 500, letterSpacing: "0.14em", textTransform: "uppercase", color: T.teal, marginBottom: 10 }}>
                     How to apply
                   </p>
-                  <p style={{ fontFamily: "'Inter',sans-serif", fontSize: 12.5, fontWeight: 300, color: T.slate, lineHeight: 1.7 }}>
+                  <p style={{ fontFamily: F.sans, fontSize: 12.5, fontWeight: 300, color: T.slate, lineHeight: 1.7 }}>
                     {pos.how}
                   </p>
                 </div>}

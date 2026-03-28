@@ -1,4 +1,4 @@
-import { T } from "../../constants";
+import { T, F, CONTAINER_MAX_WIDTH } from "../../constants";
 
 export function PageHero({ title, sub, eyebrow }) {
   return (
@@ -12,7 +12,7 @@ export function PageHero({ title, sub, eyebrow }) {
     >
       <div
         style={{
-          maxWidth: 1160,
+          maxWidth: CONTAINER_MAX_WIDTH,
           margin: "0 auto",
           padding: "0 32px",
           position: "relative",
@@ -22,7 +22,7 @@ export function PageHero({ title, sub, eyebrow }) {
         {eyebrow && (
           <p
             style={{
-              fontFamily: "'Inter',sans-serif",
+              fontFamily: F.sans,
               fontSize: 10,
               letterSpacing: "0.2em",
               textTransform: "uppercase",
@@ -35,7 +35,7 @@ export function PageHero({ title, sub, eyebrow }) {
         )}
         <h1
           style={{
-            fontFamily: "'Cormorant Garamond',serif",
+            fontFamily: F.serif,
             fontSize: "clamp(38px,5vw,64px)",
             fontWeight: 300,
             color: T.white,
@@ -49,7 +49,7 @@ export function PageHero({ title, sub, eyebrow }) {
         {sub && (
           <p
             style={{
-              fontFamily: "'Inter',sans-serif",
+              fontFamily: F.sans,
               fontSize: 16,
               fontWeight: 300,
               color: "rgba(255,255,255,0.5)",

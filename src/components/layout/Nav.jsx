@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { T, Ico } from "../../constants";
+import { T, Ico, F, CONTAINER_MAX_WIDTH } from "../../constants";
 import { NAV_LINKS } from "../../data/navigation";
 import logo from "../../assets/logo.svg";
 
@@ -29,12 +29,9 @@ export function Nav() {
         setMobileOpen(false);
       }
     };
-    document.addEventListener("mousedown", onOutsideClick);
-    document.addEventListener("touchstart", onOutsideClick);
-    return () => {
-      document.removeEventListener("mousedown", onOutsideClick);
-      document.removeEventListener("touchstart", onOutsideClick);
-    };
+    const events = ["mousedown", "touchstart"];
+    events.forEach((e) => document.addEventListener(e, onOutsideClick));
+    return () => events.forEach((e) => document.removeEventListener(e, onOutsideClick));
   }, [mobileOpen]);
 
   const textCol = T.navy;
@@ -63,7 +60,7 @@ export function Nav() {
       >
         <div
           style={{
-            maxWidth: 1160,
+            maxWidth: CONTAINER_MAX_WIDTH,
             margin: "0 auto",
             padding: "0 32px",
             height: "100%",
@@ -116,7 +113,7 @@ export function Nav() {
               >
                 <span
                   style={{
-                    fontFamily: "'Cormorant Garamond',serif",
+                    fontFamily: F.serif,
                     fontSize: 25,
                     fontWeight: 900,
                     lineHeight: 1,
@@ -126,7 +123,7 @@ export function Nav() {
                 </span>
                 <span
                   style={{
-                    fontFamily: "'Inter',sans-serif",
+                    fontFamily: F.sans,
                     fontSize: 9.5,
                     letterSpacing: "0.18em",
                     textTransform: "uppercase",
@@ -220,7 +217,7 @@ export function Nav() {
                 cursor: "pointer",
                 padding: "18px 24px",
                 marginBottom: "12px",
-                fontFamily: "'Inter',sans-serif",
+                fontFamily: F.sans,
                 fontSize: "15px",
                 fontWeight: pathname === path ? 500 : 400,
                 letterSpacing: "0.01em",

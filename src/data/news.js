@@ -5,6 +5,8 @@
    cls options: tag-grant | tag-publication | tag-award | tag-lab | tag-seminar
 ═══════════════════════════════════════════════════════ */
 
+export const NEWS_TAGS = ["All", "Publication", "Funding", "Award", "Lab News", "Talk"];
+
 export const NEWS = [
   {
     date: "February 2026",

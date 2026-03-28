@@ -1,4 +1,4 @@
-import { T, Ico } from "../../constants";
+import { T, Ico, F } from "../../constants";
 import { COLLABORATORS } from "../../data/collaborators";
 import { Sec, SH } from "../index";
 
@@ -29,7 +29,7 @@ export function CollaboratorsSection() {
           >
             <p
               style={{
-                fontFamily: "'Cormorant Garamond', serif",
+                fontFamily: F.serif,
                 fontSize: 18,
                 fontWeight: 500,
                 color: T.navy,
@@ -41,7 +41,7 @@ export function CollaboratorsSection() {
             </p>
             <p
               style={{
-                fontFamily: "'Inter', sans-serif",
+                fontFamily: F.sans,
                 fontSize: 12.5,
                 fontWeight: 300,
                 color: T.slate,
@@ -53,7 +53,7 @@ export function CollaboratorsSection() {
             {c.department && (
               <p
                 style={{
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: F.sans,
                   fontSize: 12,
                   fontWeight: 300,
                   color: T.slateLight,
@@ -65,7 +65,7 @@ export function CollaboratorsSection() {
             )}
             <p
               style={{
-                fontFamily: "'Inter', sans-serif",
+                fontFamily: F.sans,
                 fontSize: 12,
                 fontWeight: 400,
                 color: T.teal,
@@ -83,7 +83,7 @@ export function CollaboratorsSection() {
                   display: "inline-flex",
                   alignItems: "center",
                   gap: 5,
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: F.sans,
                   fontSize: 12,
                   color: T.slateLight,
                   textDecoration: "none",

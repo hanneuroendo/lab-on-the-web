@@ -1,4 +1,4 @@
-import { T } from "../../constants";
+import { T, F } from "../../constants";
 
 export function NewsGrid({ items }) {
   return (
@@ -11,18 +11,18 @@ export function NewsGrid({ items }) {
                 <span key={`${tag}-${j}`} className={`pill ${n.classes[j]}`}>{tag}</span>
               ))}
             </div>
-            <span style={{ fontFamily: "'Inter',sans-serif", fontSize: 11.5, color: T.slateLight }}>{n.date}</span>
+            <span style={{ fontFamily: F.sans, fontSize: 11.5, color: T.slateLight }}>{n.date}</span>
           </div>
-          <h3 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 21, fontWeight: 500, color: T.navy, marginBottom: 10, lineHeight: 1.25 }}>
+          <h3 style={{ fontFamily: F.serif, fontSize: 21, fontWeight: 500, color: T.navy, marginBottom: 10, lineHeight: 1.25 }}>
             {n.title}
           </h3>
-          <p style={{ fontFamily: "'Inter',sans-serif", fontSize: 13.5, fontWeight: 300, color: T.slate, lineHeight: 1.75 }}>
+          <p style={{ fontFamily: F.sans, fontSize: 13.5, fontWeight: 300, color: T.slate, lineHeight: 1.75 }}>
             {n.body}
           </p>
         </div>
       ))}
       {items.length === 0 && (
-        <p style={{ fontFamily: "'Inter',sans-serif", fontSize: 14, color: T.slateLight, gridColumn: "1/-1", padding: "48px 0", textAlign: "center" }}>
+        <p style={{ fontFamily: F.sans, fontSize: 14, color: T.slateLight, gridColumn: "1/-1", padding: "48px 0", textAlign: "center" }}>
           No updates in this category yet.
         </p>
       )}

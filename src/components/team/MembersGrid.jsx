@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { useNavigate } from "react-router-dom";
-import { T } from "../../constants";
+import { T, F } from "../../constants";
 import { TEAM } from "../../data/team";
 import { Sec, SH } from "../index";
 import { TeamFilters } from "./TeamFilters";
@@ -99,11 +99,11 @@ function BioModal({ member, onClose }) {
             >
               {member.role}
             </span>
-            <h3 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 26, fontWeight: 500, color: T.navy, lineHeight: 1.1 }}>
+            <h3 style={{ fontFamily: F.serif, fontSize: 26, fontWeight: 500, color: T.navy, lineHeight: 1.1 }}>
               {member.name}
             </h3>
             {member.project && (
-              <p style={{ fontFamily: "'Inter',sans-serif", fontSize: 12.5, fontWeight: 300, color: T.slateLight, marginTop: 12, lineHeight: 1.8 }}>
+              <p style={{ fontFamily: F.sans, fontSize: 12.5, fontWeight: 300, color: T.slateLight, marginTop: 12, lineHeight: 1.8 }}>
                 <span style={{ fontWeight: 500 }}>Project:</span> {member.project}
               </p>
             )}
@@ -127,7 +127,7 @@ function BioModal({ member, onClose }) {
             <p
               key={i}
               style={{
-                fontFamily: "'Inter',sans-serif",
+                fontFamily: F.sans,
                 fontSize: 14.5, fontWeight: 300,
                 color: T.slate, lineHeight: 1.9,
                 marginBottom: i < member.bio.length - 1 ? 18 : 0,
@@ -214,12 +214,12 @@ export function MembersGrid({ slug }) {
             >
               {m.role}
             </span>
-            <h3 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: 21, fontWeight: 500, color: T.navy, marginBottom: 10 }}>
+            <h3 style={{ fontFamily: F.serif, fontSize: 21, fontWeight: 500, color: T.navy, marginBottom: 10 }}>
               {m.name}
             </h3>
             <p
               style={{
-                fontFamily: "'Inter',sans-serif",
+                fontFamily: F.sans,
                 fontSize: 13.5, fontWeight: 300,
                 color: T.slate, lineHeight: 1.75,
                 display: "-webkit-box",
@@ -234,7 +234,7 @@ export function MembersGrid({ slug }) {
           </div>
         ))}
         {shown.length === 0 && (
-          <p style={{ fontFamily: "'Inter',sans-serif", fontSize: 14, color: T.slateLight, gridColumn: "1/-1", padding: "48px 0", textAlign: "center" }}>
+          <p style={{ fontFamily: F.sans, fontSize: 14, color: T.slateLight, gridColumn: "1/-1", padding: "48px 0", textAlign: "center" }}>
             No members in this category yet.
           </p>
         )}
