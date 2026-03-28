@@ -110,10 +110,8 @@ export const TEAM = [
     ],
     color: "#6a7a8a",
     photo: mimiFoglia,
-    alumni: true,
-    joined: "2026",
-    left: "2027",
-    project: "growth hormone investion in mouse model",
+    // project: "",
+    // alumni: true, joined: "YYYY", left: "YYYY",
   },
   {
     initials: "SS",
