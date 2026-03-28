@@ -68,7 +68,7 @@ export const TEAM = [
     ],
     color: "#6a7a8a",
     photo: hamishCampbell,
-    // project: "",
+    project: "Validation of an ultra-sensitive ELISA for mouse GH​",
     // alumni: true, joined: "YYYY", left: "YYYY",
   },
   {
@@ -82,7 +82,7 @@ export const TEAM = [
     ],
     color: "#6a7a8a",
     photo: brynCarney,
-    // project: "",
+    project: "Validation of an ultra-sensitive ELISA for mouse GH​",
     // alumni: true, joined: "YYYY", left: "YYYY",
   },
   {
@@ -96,7 +96,8 @@ export const TEAM = [
     ],
     color: "#6a7a8a",
     photo: emmaDawson,
-    // project: "",
+    project:
+      "Investigating pubertal changes of GHRH & Kisspeptin neurons in the arcuate nucleus of female mice",
     // alumni: true, joined: "YYYY", left: "YYYY",
   },
   {
@@ -110,8 +111,11 @@ export const TEAM = [
     ],
     color: "#6a7a8a",
     photo: mimiFoglia,
-    // project: "",
-    // alumni: true, joined: "YYYY", left: "YYYY",
+    project:
+      "Investigating pubertal changes of GHRH & Kisspeptin neurons in the arcuate nucleus of female mice",
+    // alumni: true,
+    // joined: "2023",
+    // left: "2026",
   },
   {
     initials: "SS",

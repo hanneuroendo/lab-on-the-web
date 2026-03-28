@@ -4,6 +4,14 @@ import { T } from "../constants";
 // Colours progress from lightest (undergraduate) to darkest (PI),
 // all derived from the existing navy/teal/slate palette.
 // To add a new role, add a matching condition before the fallback.
+// Roles:
+// principal investigator,
+// postdoc, research fellow,
+// phd,
+// mphil, masters, master,
+// undergraudate, intern,
+// staff, manager, operations
+
 export const roleColor = (role) => {
   const r = role.toLowerCase();
   if (r.includes("principal investigator"))

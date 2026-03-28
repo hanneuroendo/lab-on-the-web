@@ -102,7 +102,7 @@ function BioModal({ member, onClose }) {
               {member.name}
             </h3>
             {member.project && (
-              <p style={{ fontFamily: "'Inter',sans-serif", fontSize: 12.5, fontWeight: 300, color: T.slateLight, marginTop: 12 }}>
+              <p style={{ fontFamily: "'Inter',sans-serif", fontSize: 12.5, fontWeight: 300, color: T.slateLight, marginTop: 12, lineHeight: 1.8 }}>
                 <span style={{ fontWeight: 500 }}>Project:</span> {member.project}
               </p>
             )}
@@ -153,6 +153,15 @@ export function MembersGrid() {
   const navigate = useNavigate();
   const { slug } = useParams();
 
+  const isAlumniSlug = slug && TEAM.some((m) => m.slug === slug && m.alumni);
+  useEffect(() => {
+    if (isAlumniSlug) {
+      navigate("/team", { replace: true });
+      setTimeout(() => {
+        document.getElementById("alumni")?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
+  }, [isAlumniSlug, navigate]);
   const modalMember = slug ? TEAM.find((m) => m.slug === slug && !m.alumni) ?? null : null;
 
   const shown = filter === "All" ? sorted : sorted.filter((m) => m.categories.includes(filter));

@@ -27,7 +27,7 @@ export function AlumniSection() {
   const toggle = (key) => setOpen((prev) => ({ ...prev, [key]: !prev[key] }));
 
   return (
-    <Sec bg={T.offWhite} style={{ padding: "56px 0" }}>
+    <Sec id="alumni" bg={T.offWhite} style={{ padding: "56px 0" }}>
       <div style={{ maxWidth: 860 }}>
         <SH eyebrow="Former Members" title="Lab Alumni" />
         <div style={{ marginTop: 32 }}>

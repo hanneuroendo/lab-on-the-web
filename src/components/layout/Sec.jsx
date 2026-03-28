@@ -1,8 +1,8 @@
 import { T } from "../../constants";
 
-export function Sec({ children, bg = T.offWhite, style = {} }) {
+export function Sec({ children, bg = T.offWhite, style = {}, id }) {
   return (
-    <section style={{ background: bg, padding: "80px 0", ...style }}>
+    <section id={id} style={{ background: bg, padding: "80px 0", ...style }}>
       <div style={{ maxWidth: 1160, margin: "0 auto", padding: "0 32px" }}>
         {children}
       </div>
