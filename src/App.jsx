@@ -6,6 +6,7 @@ import PagePublications from "./pages/PagePublications";
 import PageTeam from "./pages/PageTeam";
 import PageJoin from "./pages/PageJoin";
 import PageNews from "./pages/PageNews";
+import Page404 from "./pages/Page404";
 
 /* ═══════════════════════════════════════════════════════
    HAN LAB — NEUROENDOCRINOLOGY
@@ -25,7 +26,7 @@ export default function HanLabApp() {
         <Route path="/team/:slug" element={<PageTeam />} />
         <Route path="/join" element={<PageJoin />} />
         <Route path="/news" element={<PageNews />} />
-        <Route path="*" element={<PageHome />} />
+        <Route path="*" element={<Page404 />} />
       </Routes>
     </BrowserRouter>
   );
