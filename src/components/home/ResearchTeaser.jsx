@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { T, Ico } from "../../constants";
 import { Sec, SH } from "../index";
 
@@ -22,7 +23,8 @@ const pillars = [
   },
 ];
 
-export function ResearchTeaser({ setPage }) {
+export function ResearchTeaser() {
+  const navigate = useNavigate();
   return (
     <Sec>
       <SH
@@ -93,7 +95,7 @@ export function ResearchTeaser({ setPage }) {
       </div>
       <div style={{ marginTop: 32, textAlign: "center" }}>
         <button
-          onClick={() => setPage("research")}
+          onClick={() => navigate("/research")}
           className="btn btn-outline-dark"
         >
           Full Research Overview {Ico.arrowR}

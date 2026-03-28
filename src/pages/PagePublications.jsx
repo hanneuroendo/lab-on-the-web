@@ -4,7 +4,7 @@ import { PageWrap, Sec, PageHero, Footer } from "../components";
 import { PubControls } from "../components/publications/PubControls";
 import { PubList } from "../components/publications/PubList";
 
-export default function PagePublications({ setPage }) {
+export default function PagePublications() {
   const [q, setQ] = useState("");
   const [filterType, setFilterType] = useState("All");
 
@@ -39,7 +39,7 @@ export default function PagePublications({ setPage }) {
         />
         <PubList shown={shown} q={q} />
       </Sec>
-      <Footer setPage={setPage} />
+      <Footer />
     </PageWrap>
   );
 }

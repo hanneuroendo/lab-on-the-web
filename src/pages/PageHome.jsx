@@ -5,15 +5,15 @@ import { NewsStrip } from "../components/home/NewsStrip";
 import { JoinCTA } from "../components/home/JoinCTA";
 import { LogoCloud } from "../components/home/LogoCloud";
 
-export default function PageHome({ setPage }) {
+export default function PageHome() {
   return (
     <PageWrap padTop={false}>
-      <HomeHero setPage={setPage} />
-      <ResearchTeaser setPage={setPage} />
-      <NewsStrip setPage={setPage} />
-      <JoinCTA setPage={setPage} />
+      <HomeHero />
+      <ResearchTeaser />
+      <NewsStrip />
+      <JoinCTA />
       <LogoCloud />
-      <Footer setPage={setPage} />
+      <Footer />
     </PageWrap>
   );
 }

@@ -3,7 +3,7 @@ import { PositionsGrid } from "../components/join/PositionsGrid";
 import { WhatWeOffer } from "../components/join/WhatWeOffer";
 import { ContactCTA } from "../components/join/ContactCTA";
 
-export default function PageJoin({ setPage }) {
+export default function PageJoin() {
   return (
     <PageWrap>
       <PageHero
@@ -15,7 +15,7 @@ export default function PageJoin({ setPage }) {
       <PositionsGrid />
       <WhatWeOffer />
       <ContactCTA />
-      <Footer setPage={setPage} />
+      <Footer />
     </PageWrap>
   );
 }

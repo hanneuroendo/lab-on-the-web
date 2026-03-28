@@ -1,8 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import { T, Ico } from "../../constants";
 import { NEWS } from "../../data/news";
 import { Sec, SH } from "../index";
 
-export function NewsStrip({ setPage }) {
+export function NewsStrip() {
+  const navigate = useNavigate();
   return (
     <Sec bg={T.white}>
       <div
@@ -17,7 +19,7 @@ export function NewsStrip({ setPage }) {
       >
         <SH eyebrow="Updates" title="Latest News" style={{ marginBottom: 0 }} />
         <button
-          onClick={() => setPage("news")}
+          onClick={() => navigate("/news")}
           className="btn btn-outline-dark"
           style={{ alignSelf: "flex-end", flexShrink: 0 }}
         >

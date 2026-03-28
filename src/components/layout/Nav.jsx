@@ -1,9 +1,12 @@
 import { useState, useEffect, useRef } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import { T, Ico } from "../../constants";
 import { NAV_LINKS } from "../../data/navigation";
 import logo from "../../assets/logo.svg";
 
-export function Nav({ page, setPage }) {
+export function Nav() {
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
   const drawerRef = useRef(null);
   const navRef = useRef(null);
@@ -70,7 +73,7 @@ export function Nav({ page, setPage }) {
           }}
         >
           <button
-            onClick={() => setPage("home")}
+            onClick={() => navigate("/")}
             style={{
               background: "none",
               border: "none",
@@ -142,17 +145,17 @@ export function Nav({ page, setPage }) {
             className="hide-mobile"
             style={{ display: "flex", gap: 32, alignItems: "center" }}
           >
-            {NAV_LINKS.map(({ key, label }) => (
+            {NAV_LINKS.map(({ key, path, label }) => (
               <button
                 key={key}
-                onClick={() => setPage(key)}
-                className={`nav-link ${page === key ? "active" : ""}`}
+                onClick={() => navigate(path)}
+                className={`nav-link ${pathname === path ? "active" : ""}`}
                 style={{
                   background: "none",
                   border: "none",
                   cursor: "pointer",
                   padding: 0,
-                  color: page === key ? T.teal : textCol,
+                  color: pathname === path ? T.teal : textCol,
                 }}
               >
                 {label}
@@ -198,11 +201,11 @@ export function Nav({ page, setPage }) {
             boxShadow: "0 12px 40px rgba(0,0,0,0.5)",
           }}
         >
-          {NAV_LINKS.map(({ key, label }) => (
+          {NAV_LINKS.map(({ key, path, label }) => (
             <button
               key={key}
               onClick={() => {
-                setPage(key);
+                navigate(path);
                 setMobileOpen(false);
               }}
               style={{
@@ -219,9 +222,9 @@ export function Nav({ page, setPage }) {
                 marginBottom: "12px",
                 fontFamily: "'Inter',sans-serif",
                 fontSize: "15px",
-                fontWeight: page === key ? 500 : 400,
+                fontWeight: pathname === path ? 500 : 400,
                 letterSpacing: "0.01em",
-                color: page === key ? T.white : "rgba(255,255,255,0.6)",
+                color: pathname === path ? T.white : "rgba(255,255,255,0.6)",
                 transition: "all 0.2s ease",
               }}
               onMouseEnter={(e) => {
@@ -230,10 +233,10 @@ export function Nav({ page, setPage }) {
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.background = `rgba(255,255,255,0.04)`;
-                e.currentTarget.style.color = page === key ? T.white : "rgba(255,255,255,0.6)";
+                e.currentTarget.style.color = pathname === path ? T.white : "rgba(255,255,255,0.6)";
               }}
             >
-              {page === key && (
+              {pathname === path && (
                 <span style={{ width: 6, height: 6, borderRadius: "50%", background: T.teal, flexShrink: 0 }} />
               )}
               {label}

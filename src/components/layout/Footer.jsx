@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { T } from "../../constants";
 import { NAV_LINKS } from "../../data/navigation";
 import logo from "../../assets/logo-dark.svg";
@@ -32,7 +33,8 @@ const SOCIALS = [
   },
 ];
 
-export function Footer({ setPage }) {
+export function Footer() {
+  const navigate = useNavigate();
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
@@ -58,10 +60,10 @@ export function Footer({ setPage }) {
             marginBottom: 48,
           }}
         >
-          {NAV_LINKS.map(({ key: k, label: l }) => (
+          {NAV_LINKS.map(({ key: k, path: p, label: l }) => (
             <button
               key={k}
-              onClick={() => setPage(k)}
+              onClick={() => navigate(p)}
               style={{
                 background: "none",
                 border: "none",

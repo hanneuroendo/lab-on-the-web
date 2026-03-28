@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import { T, Ico } from "../../constants";
 import { Sec } from "../index";
 
-export function JoinCTA({ setPage }) {
+export function JoinCTA() {
+  const navigate = useNavigate();
   return (
     <Sec bg={T.navy} style={{ padding: "clamp(48px, 8vh, 72px) 0" }}>
       <div
@@ -51,7 +53,7 @@ export function JoinCTA({ setPage }) {
           </p>
         </div>
         <button
-          onClick={() => setPage("join")}
+          onClick={() => navigate("/join")}
           className="btn btn-gold"
           style={{ flexShrink: 0 }}
         >

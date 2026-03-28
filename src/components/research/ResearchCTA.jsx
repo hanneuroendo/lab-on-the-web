@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import { T, Ico } from "../../constants";
 import { Sec } from "../index";
 
-export function ResearchCTA({ setPage }) {
+export function ResearchCTA() {
+  const navigate = useNavigate();
   return (
     <Sec bg={T.offWhite} style={{ padding: "clamp(48px,8vh,72px) 0" }}>
       <div
@@ -25,10 +27,10 @@ export function ResearchCTA({ setPage }) {
           </p>
         </div>
         <div style={{ display: "flex", gap: 12, flexWrap: "wrap", flexShrink: 0 }}>
-          <button onClick={() => setPage("publications")} className="btn btn-primary">
+          <button onClick={() => navigate("/publications")} className="btn btn-primary">
             Publications {Ico.arrowR}
           </button>
-          <button onClick={() => setPage("join")} className="btn btn-outline-dark">
+          <button onClick={() => navigate("/join")} className="btn btn-outline-dark">
             Opportunities
           </button>
         </div>

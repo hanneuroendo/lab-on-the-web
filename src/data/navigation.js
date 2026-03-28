@@ -1,10 +1,10 @@
 export const NAV_LINKS = [
-  { key: "home", label: "Home" },
-  { key: "research", label: "Research" },
-  { key: "publications", label: "Publications" },
-  { key: "team", label: "Team" },
-  { key: "join", label: "Join Us" },
-  { key: "news", label: "News" },
+  { key: "home", path: "/", label: "Home" },
+  { key: "research", path: "/research", label: "Research" },
+  { key: "publications", path: "/publications", label: "Publications" },
+  { key: "team", path: "/team", label: "Team" },
+  { key: "join", path: "/join", label: "Join Us" },
+  { key: "news", path: "/news", label: "News" },
 ];
 
 export const AFFILIATIONS = [

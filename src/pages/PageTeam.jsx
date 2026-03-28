@@ -4,7 +4,7 @@ import { CollaboratorsSection } from "../components/team/CollaboratorsSection";
 import { AlumniSection } from "../components/team/AlumniSection";
 import { LabPhotos } from "../components/team/LabPhotos";
 
-export default function PageTeam({ setPage }) {
+export default function PageTeam() {
   return (
     <PageWrap>
       <PageHero
@@ -17,7 +17,7 @@ export default function PageTeam({ setPage }) {
       <CollaboratorsSection />
       <AlumniSection />
       <LabPhotos />
-      <Footer setPage={setPage} />
+      <Footer />
     </PageWrap>
   );
 }

@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import NeuralGrid from "./NeuralGrid";
 import { T, Ico } from "../../constants";
 
-export function HomeHero({ setPage }) {
+export function HomeHero() {
+  const navigate = useNavigate();
   return (
     <header
       style={{
@@ -222,13 +224,13 @@ export function HomeHero({ setPage }) {
           }}
         >
           <button
-            onClick={() => setPage("research")}
+            onClick={() => navigate("/research")}
             className="btn btn-primary"
           >
             Explore Research {Ico.arrowR}
           </button>
           <button
-            onClick={() => setPage("publications")}
+            onClick={() => navigate("/publications")}
             className="btn btn-outline-light"
           >
             View Publications

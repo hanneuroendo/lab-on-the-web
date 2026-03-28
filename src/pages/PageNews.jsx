@@ -4,7 +4,7 @@ import { PageWrap, Sec, PageHero, Footer } from "../components";
 import { NewsFilters } from "../components/news/NewsFilters";
 import { NewsGrid } from "../components/news/NewsGrid";
 
-export default function PageNews({ setPage }) {
+export default function PageNews() {
   const [filter, setFilter] = useState("All");
   const shown =
     filter === "All" ? NEWS : NEWS.filter((n) => n.tags.includes(filter));
@@ -21,7 +21,7 @@ export default function PageNews({ setPage }) {
         <NewsFilters filter={filter} setFilter={setFilter} />
         <NewsGrid items={shown} />
       </Sec>
-      <Footer setPage={setPage} />
+      <Footer />
     </PageWrap>
   );
 }

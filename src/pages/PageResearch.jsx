@@ -4,7 +4,7 @@ import { PillarSection } from "../components/research/PillarSection";
 import { MethodsGrid } from "../components/research/MethodsGrid";
 import { ResearchCTA } from "../components/research/ResearchCTA";
 
-export default function PageResearch({ setPage }) {
+export default function PageResearch() {
   return (
     <PageWrap>
       <PageHero
@@ -18,8 +18,8 @@ export default function PageResearch({ setPage }) {
       ))}
 
       <MethodsGrid />
-      <ResearchCTA setPage={setPage} />
-      <Footer setPage={setPage} />
+      <ResearchCTA />
+      <Footer />
     </PageWrap>
   );
 }
