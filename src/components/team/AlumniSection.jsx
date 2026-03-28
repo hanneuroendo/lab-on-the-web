@@ -2,7 +2,7 @@ import { useState } from "react";
 import { T } from "../../constants";
 import { TEAM } from "../../data/team";
 import { Sec, SH } from "../index";
-import { roleColor } from "./MembersGrid";
+import { roleColor } from "../../utils/roleColor";
 
 const alumni = TEAM.filter((m) => m.alumni);
 

@@ -48,7 +48,7 @@ export const TEAM = [
     slug: "laura-kibedi-varga",
     name: "Laura Kibédi-Varga",
     role: "Internship Student",
-    categories: ["Student"],
+    categories: ["Researcher"],
     bio: [
       "Laura joined us to explore the role of dynorphin in kisspeptin neuron synchronisation and its impact on reproductive hormone regulation. Having been awarded the StARIS internship to work in the lab, she is excited to contribute to this research and deepen her understanding of neuroendocrine mechanisms. She will begin an MPhil in Clinical Neurosciences at the University of Cambridge next year, and sees this experience as an important step in preparing for a PhD later in her academic journey.",
     ],
