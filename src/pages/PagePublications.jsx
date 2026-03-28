@@ -5,6 +5,8 @@ import { PubControls } from "../components/publications/PubControls";
 import { PubList } from "../components/publications/PubList";
 import { SEO } from "../components/SEO";
 
+const DESCRIPTION = "A selection of published and preprint research and review articles from Han Lab.";
+
 const PUBS_JSONLD = {
   "@context": "https://schema.org",
   "@type": "ItemList",
@@ -43,16 +45,11 @@ export default function PagePublications() {
 
   return (
     <PageWrap>
-      <SEO
-        title="Publications"
-        url="/publications"
-        description="A selection of published and preprint research and review articles from Han Lab."
-        jsonLd={PUBS_JSONLD}
-      />
+      <SEO title="Publications" url="/publications" description={DESCRIPTION} jsonLd={PUBS_JSONLD} />
       <PageHero
         eyebrow="Han Lab · St Andrews"
         title="Publications"
-        sub="A selection of published and preprint research and review articles."
+        sub={DESCRIPTION}
       />
 
       <Sec bg="white">

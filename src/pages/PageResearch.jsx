@@ -5,18 +5,16 @@ import { MethodsGrid } from "../components/research/MethodsGrid";
 import { ResearchCTA } from "../components/research/ResearchCTA";
 import { SEO } from "../components/SEO";
 
+const DESCRIPTION = "Three interconnected programmes at the intersection of neuroscience and endocrinology.";
+
 export default function PageResearch() {
   return (
     <PageWrap>
-      <SEO
-        title="Research"
-        url="/research"
-        description="Three interconnected programmes at the intersection of neuroscience and endocrinology."
-      />
+      <SEO title="Research" url="/research" description={DESCRIPTION} />
       <PageHero
         eyebrow="Han Lab · St Andrews"
         title="Research"
-        sub="Three interconnected programmes at the intersection of neuroscience and endocrinology."
+        sub={DESCRIPTION}
       />
 
       {PILLARS.map((p, i) => (

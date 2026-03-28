@@ -7,6 +7,8 @@ import { AlumniSection } from "../components/team/AlumniSection";
 import { LabPhotos } from "../components/team/LabPhotos";
 import { SEO } from "../components/SEO";
 
+const PAGE_DESCRIPTION = "Get to know our team and the projects they are passionate about.";
+
 export default function PageTeam() {
   const { slug } = useParams();
   const member = slug ? TEAM.find((m) => m.slug === slug) : null;
@@ -14,7 +16,7 @@ export default function PageTeam() {
   const seoTitle = member ? member.name : "The Team";
   const seoDescription = member
     ? `${member.name} — ${member.role} at Han Lab, University of St Andrews.`
-    : "Get to know our team and the projects they are passionate about.";
+    : PAGE_DESCRIPTION;
   const seoUrl = member ? `/team/${member.slug}` : "/team";
   const memberJsonLd = member
     ? {
@@ -42,7 +44,7 @@ export default function PageTeam() {
       <PageHero
         eyebrow="Han Lab · St Andrews"
         title="The Team"
-        sub="Get to know our team and the projects they are passionate about."
+        sub={PAGE_DESCRIPTION}
       />
 
       <MembersGrid slug={slug} />

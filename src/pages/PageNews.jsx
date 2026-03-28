@@ -5,6 +5,8 @@ import { NewsFilters } from "../components/news/NewsFilters";
 import { NewsGrid } from "../components/news/NewsGrid";
 import { SEO } from "../components/SEO";
 
+const DESCRIPTION = "Recent publications, fundings, awards, talks, and lab updates from Han Lab.";
+
 export default function PageNews() {
   const [filter, setFilter] = useState("All");
   const shown =
@@ -12,15 +14,11 @@ export default function PageNews() {
 
   return (
     <PageWrap>
-      <SEO
-        title="News & Updates"
-        url="/news"
-        description="Recent publications, fundings, awards, talks, and lab updates from Han Lab."
-      />
+      <SEO title="News & Updates" url="/news" description={DESCRIPTION} />
       <PageHero
         eyebrow="Han Lab · St Andrews"
         title="News & Updates"
-        sub="Recent publications, fundings, awards, talks, and lab updates."
+        sub={DESCRIPTION}
       />
 
       <Sec bg="white">
