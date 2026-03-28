@@ -23,7 +23,13 @@ import brynCarney from "../assets/members/bryn-carney.jpg";
 import stevenSeo from "../assets/members/steven-seo.jpg";
 import lauraVarga from "../assets/members/laura-varga.jpg";
 
-export const TEAM_CATEGORIES = ["All", "Principal Investigator", "Researcher", "Student", "Staff"];
+export const TEAM_CATEGORIES = [
+  "All",
+  "Principal Investigator",
+  "Researcher",
+  "Student",
+  "Staff",
+];
 
 export const TEAM = [
   {
@@ -56,7 +62,8 @@ export const TEAM = [
     ],
     color: "#6a7a8a",
     photo: lauraVarga,
-    // project: "",
+    project:
+      "The role of dynorphin in kisspeptin neuron synchronisation and its impact on reproductive hormone regulation",
     // alumni: true, joined: "YYYY", left: "YYYY",
   },
   {
