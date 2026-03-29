@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Nav } from "./components";
 import PageHome from "./pages/PageHome";
 import PageResearch from "./pages/PageResearch";
@@ -26,8 +26,7 @@ export default function HanLabApp() {
         <Route path="/team/:slug" element={<PageTeam />} />
         <Route path="/join" element={<PageJoin />} />
         <Route path="/news" element={<PageNews />} />
-        <Route path="/404" element={<Page404 />} />
-        <Route path="*" element={<Navigate to="/404" replace />} />
+        <Route path="*" element={<Page404 />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,27 +1,9 @@
-import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { T, F, CONTAINER_MAX_WIDTH } from "../constants";
 import { SEO } from "../components/SEO";
 
 export default function Page404() {
   const navigate = useNavigate();
-  const [count, setCount] = useState(5);
-  const [pulse, setPulse] = useState(false);
-
-  useEffect(() => {
-    if (count === 0) {
-      navigate("/", { replace: true });
-      return;
-    }
-    // trigger pulse animation at the start of each second
-    setPulse(true);
-    const resetPulse = setTimeout(() => setPulse(false), 400);
-    const t = setTimeout(() => setCount((c) => c - 1), 1000);
-    return () => {
-      clearTimeout(t);
-      clearTimeout(resetPulse);
-    };
-  }, [count, navigate]);
 
   return (
     <main style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: `linear-gradient(145deg, ${T.navyDark} 0%, ${T.navy} 100%)` }}>
@@ -69,33 +51,10 @@ export default function Page404() {
             fontWeight: 300,
             color: "rgba(255,255,255,0.5)",
             lineHeight: 1.7,
-            marginBottom: 8,
-          }}
-        >
-          The page you're looking for doesn't exist.
-        </p>
-        <p
-          style={{
-            fontFamily: F.sans,
-            fontSize: 13,
-            fontWeight: 300,
-            color: "rgba(255,255,255,0.35)",
             marginBottom: 40,
           }}
         >
-          Redirecting to home in{" "}
-          <span
-            style={{
-              color: T.tealLight,
-              display: "inline-block",
-              transition: "transform 0.4s ease, opacity 0.4s ease",
-              transform: pulse ? "scale(0.75)" : "scale(1)",
-              opacity: pulse ? 0.4 : 1,
-            }}
-          >
-            {count}s
-          </span>
-          …
+          The page you're looking for doesn't exist.
         </p>
         <button
           onClick={() => navigate("/", { replace: true })}
