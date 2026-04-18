@@ -11,7 +11,7 @@ export const POSITIONS = [
     title: "Research Assistant / Research Technician",
     icon: "flask",
     status: "Closed",
-    desc: "This position is now closed. We are grateful for the strong interest received. As the Han Lab continues to expand - supported by Wellcome Trust funding - we anticipate future openings for Research Assistants and Technicians. If you are passionate about neuroscience research and would like to be considered for upcoming roles, we welcome speculative enquiries.",
+    desc: "Applications are now closed. We are grateful for the strong response. Supported by the Wellcome Trust, we are continuing to grow and look forward to announcing new roles within our research team soon.",
     // reqs: [
     //   "BSc in Neuroscience, Physiology, Biology, or a related discipline (or close to completion)",
     //   "Experience in a laboratory environment, including maintaining accurate records and documentation",
