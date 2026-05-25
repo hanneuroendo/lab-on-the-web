@@ -1,7 +1,6 @@
 export const POSITIONS = [
   {
     title: "Master's and PhD Positions",
-    icon: "mortarboard",
     status: "Enquiries Welcome",
     desc: "We are currently seeking motivated Master’s and PhD students. If you are interested in joining our lab or have any inquiries about available projects, please don’t hesitate to reach out.",
     reqs: [],
@@ -9,7 +8,6 @@ export const POSITIONS = [
   },
   {
     title: "Research Assistant / Research Technician",
-    icon: "flask",
     status: "Closed",
     desc: "Applications are now closed. We are grateful for the strong response. Supported by the Wellcome Trust, we are continuing to grow and look forward to announcing new roles within our research team soon.",
     // reqs: [

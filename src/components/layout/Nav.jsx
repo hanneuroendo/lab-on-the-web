@@ -34,7 +34,6 @@ export function Nav() {
     return () => events.forEach((e) => document.removeEventListener(e, onOutsideClick));
   }, [mobileOpen]);
 
-  const textCol = T.navy;
   const bg = mobileOpen ? T.navyDark : T.white;
   const shadow = mobileOpen
     ? "none"
@@ -146,13 +145,14 @@ export function Nav() {
               <button
                 key={key}
                 onClick={() => navigate(path)}
+                aria-current={pathname === path ? "page" : undefined}
                 className={`nav-link ${pathname === path ? "active" : ""}`}
                 style={{
                   background: "none",
                   border: "none",
                   cursor: "pointer",
                   padding: 0,
-                  color: pathname === path ? T.teal : textCol,
+                  color: pathname === path ? T.teal : T.navy,
                 }}
               >
                 {label}
@@ -163,6 +163,8 @@ export function Nav() {
           {/* Mobile menu toggle */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label="Toggle navigation menu"
+            aria-expanded={mobileOpen}
             style={{
               display: "none",
               background: "none",

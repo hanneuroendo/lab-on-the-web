@@ -9,13 +9,39 @@
    Set src: null to show a "Photo coming soon" placeholder.
 ═══════════════════════════════════════════════════════ */
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { T, F } from "../../constants";
 import { PHOTOS } from "../../data/photos";
 import { Sec, SH } from "../index";
 
 export function LabPhotos() {
   const [hoveredPhoto, setHoveredPhoto] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [showDots, setShowDots] = useState(false);
+  const stripRef = useRef(null);
+
+  const getPages = () => {
+    const el = stripRef.current;
+    if (!el) return 1;
+    return Math.round(el.scrollWidth / el.clientWidth);
+  };
+
+  const handleScroll = () => {
+    const el = stripRef.current;
+    if (!el) return;
+    const pages = getPages();
+    setActiveIndex(Math.min(Math.round((el.scrollLeft / (el.scrollWidth - el.clientWidth)) * (pages - 1)), pages - 1));
+  };
+
+  const scrollTo = (i) => {
+    const el = stripRef.current;
+    if (!el) return;
+    const pages = getPages();
+    el.scrollTo({ left: (el.scrollWidth - el.clientWidth) * (i / (pages - 1)), behavior: "smooth" });
+    setActiveIndex(i);
+  };
+
+  const pages = getPages();
 
   return (
     <Sec bg={T.white}>
@@ -25,7 +51,11 @@ export function LabPhotos() {
         sub="A glimpse into everyday life in the Han Lab — from experiments and conferences to group gatherings and life in St Andrews."
       />
       <div
+        ref={stripRef}
         className="lab-photos-strip"
+        onScroll={handleScroll}
+        onMouseEnter={() => setShowDots(true)}
+        onMouseLeave={() => setShowDots(false)}
         style={{
           display: "flex",
           gap: 16,
@@ -39,7 +69,7 @@ export function LabPhotos() {
           <div
             key={p.src ?? p.caption}
             style={{
-              flex: "0 0 200px",
+              flex: "0 0 min(200px, 60vw)",
               borderRadius: 8,
               overflow: "hidden",
               position: "relative",
@@ -91,6 +121,26 @@ export function LabPhotos() {
               </p>
             )}
           </div>
+        ))}
+      </div>
+
+      <div style={{ display: "flex", justifyContent: "center", gap: 8, marginTop: 16, opacity: showDots ? 1 : 0, transition: "opacity 0.25s ease" }}>
+        {Array.from({ length: pages }, (_, i) => (
+          <button
+            key={i}
+            onClick={() => scrollTo(i)}
+            style={{
+              width: 10,
+              height: 10,
+              borderRadius: "50%",
+              border: "none",
+              cursor: "pointer",
+              padding: 0,
+              background: T.gold,
+              opacity: i === activeIndex ? 1 : 0.25,
+              transition: "opacity 0.25s ease",
+            }}
+          />
         ))}
       </div>
     </Sec>

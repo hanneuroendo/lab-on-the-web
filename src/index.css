@@ -33,6 +33,27 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Focus states — keyboard navigation */
+:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
+}
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+.filter-pill:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 3px;
+  border-radius: 99px;
+}
+.btn:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 3px;
+}
+
 /* Lab photos strip */
 .lab-photos-strip::-webkit-scrollbar { display: none; }
 
@@ -155,6 +176,11 @@ body {
   background: transparent;
   color: var(--slate);
   border: 1px solid var(--slate-pale);
+}
+.filter-pill:hover:not(.active) {
+  background: var(--slate-pale);
+  color: var(--navy);
+  border-color: var(--slate-pale);
 }
 .filter-pill.active {
   font-weight: 500;

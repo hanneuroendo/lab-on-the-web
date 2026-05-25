@@ -5,7 +5,14 @@
    cls options: tag-grant | tag-publication | tag-award | tag-lab | tag-seminar
 ═══════════════════════════════════════════════════════ */
 
-export const NEWS_TAGS = ["All", "Publication", "Funding", "Award", "Lab News", "Talk"];
+export const NEWS_TAGS = [
+  "All",
+  "Publication",
+  "Funding",
+  "Award",
+  "Lab News",
+  "Talk",
+];
 
 export const NEWS = [
   {
@@ -26,7 +33,7 @@ export const NEWS = [
     date: "December 2025",
     tags: ["Funding", "Award"],
     classes: ["tag-funding", "tag-award"],
-    title: "Awarded a Medical Research Scotland Early Career Researcher grant",
+    title: "Awarded a Medical Research Scotland Early Career Researcher Grant",
     body: "Supporting pilot studies on the neural control of growth hormone dynamics for 2 years. This grant will fund preliminary experiments to establish feasibility for future larger-scale applications.",
   },
   {

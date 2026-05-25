@@ -5,9 +5,9 @@ import { Sec } from "../index";
 export function PositionsGrid() {
   return (
     <Sec bg={T.white}>
-      <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
+      <div style={{ display: "flex", flexDirection: "column", gap: 24, maxWidth: 760, margin: "0 auto" }}>
         {POSITIONS.map((pos) => (
-          <div key={pos.title} style={{ background: T.offWhite, borderRadius: 10, padding: "40px 48px", border: `1px solid ${T.slatePale}` }}>
+          <div key={pos.title} style={{ background: T.offWhite, borderRadius: 10, padding: "clamp(24px, 5vw, 40px) clamp(20px, 5vw, 48px)", border: `1px solid ${T.slatePale}` }}>
             <div>
                 <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 12 }}>
                   <h2 style={{ fontFamily: F.serif, fontSize: 28, fontWeight: 500, color: T.navy, letterSpacing: "-0.01em" }}>

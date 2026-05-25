@@ -15,7 +15,7 @@ import { T } from "../constants";
 export const roleColor = (role) => {
   const r = role.toLowerCase();
   if (r.includes("principal investigator"))
-    return { background: T.navy, color: T.white, border: T.navy }; // PI — navy solid
+    return { background: T.teal, color: T.white, border: T.teal }; // PI — teal solid
   if (r.includes("postdoc") || r.includes("research fellow"))
     return {
       background: "rgba(47,72,88,0.1)",

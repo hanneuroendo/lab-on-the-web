@@ -28,6 +28,16 @@ export const F = {
 
 export const CONTAINER_MAX_WIDTH = 1160;
 
+/* ── Shared style snippets ── */
+export const S = {
+  // Uppercase label used in table headers and section eyebrows
+  label: { fontSize: 11, fontWeight: 500, letterSpacing: "0.1em", textTransform: "uppercase" },
+  // Standard card heading
+  cardHeading: { fontWeight: 500, lineHeight: 1.25 },
+  // Muted body copy
+  body: { fontWeight: 300, lineHeight: 1.75 },
+};
+
 /* ── Pages ── */
 export const PAGES = [
   "home",
@@ -214,56 +224,6 @@ export const Ico = {
     >
       <line x1="3" y1="3" x2="15" y2="15" />
       <line x1="15" y1="3" x2="3" y2="15" />
-    </svg>
-  ),
-  flask: (
-    <svg
-      width="22"
-      height="22"
-      viewBox="0 0 22 22"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.4"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M8 3h6" />
-      <path d="M9 3v6l-4 9a1 1 0 00.9 1.5h10.2a1 1 0 00.9-1.5L13 9V3" />
-      <line x1="7" y1="14" x2="15" y2="14" />
-      <circle cx="9.5" cy="16.5" r="0.8" fill="currentColor" stroke="none" />
-      <circle cx="13" cy="17.5" r="0.6" fill="currentColor" stroke="none" />
-    </svg>
-  ),
-  mortarboard: (
-    <svg
-      width="22"
-      height="22"
-      viewBox="0 0 22 22"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.4"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <polygon points="11,3 21,8 11,13 1,8" />
-      <path d="M6 10.5v5c0 0 2 2.5 5 2.5s5-2.5 5-2.5v-5" />
-      <line x1="21" y1="8" x2="21" y2="14" />
-    </svg>
-  ),
-  beaker: (
-    <svg
-      width="22"
-      height="22"
-      viewBox="0 0 22 22"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.4"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M6 3h10" />
-      <path d="M8 3v5.5L3.5 17A2 2 0 005.3 20h11.4a2 2 0 001.8-2.9L14 8.5V3" />
-      <line x1="5" y1="13" x2="17" y2="13" />
     </svg>
   ),
 };

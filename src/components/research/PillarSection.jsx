@@ -11,7 +11,7 @@ export function PillarSection({ pillar, index }) {
         {/* Left */}
         <div className="pillar-sticky">
           <div className="icon-ring" style={{ marginBottom: 20 }}>
-            {Ico[pillar.icon]}
+            {Ico[pillar.icon] ?? null}
           </div>
           <span style={{ fontFamily: F.serif, fontSize: 72, fontWeight: 300, color: "rgba(61,143,166,0.2)", lineHeight: 1, display: "block", marginBottom: 8 }}>
             {pillar.num}
