@@ -42,8 +42,8 @@ export const TEAM = [
       "Su is a Principal Investigator at the University of St Andrews (UK), where she studies the neural control of endocrine function across the lifespan. Her research focuses on how hypothalamic circuits generate and coordinate hormonal rhythms, particularly in the contexts of growth, reproduction, and ageing.",
       "She completed her undergraduate and doctoral training at the University of Otago (New Zealand). Her early research with Dr Chris Bolter examined ion channel mechanisms underlying vagal slowing of heart rate, shaping her interest in physiological regulation. During this time, she also worked as a research assistant in a neuroscience laboratory, where she developed a strong interest in how brain-body interactions are coordinated, motivating her transition into neuroendocrinology.",
       "She continued into her PhD under the supervision of Professor Colin Brown, investigating plastic changes in vasopressin neuron activity in hypertension, where she became increasingly interested in the dynamic interplay between neural circuits and endocrine function. She then undertook postdoctoral research with Professor Allan Herbison, where she developed and established advanced in vivo optical approaches to study hypothalamic circuits, and used these to identify key mechanisms by which arcuate nucleus kisspeptin neurons generate pulsatile gonadotrophin-releasing hormone (GnRH) and luteinising hormone (LH) secretion.",
-      "Her scientific perspective is grounded in the concept embodied by natura non facit saltus — nature does not make leaps — and that small, gradual changes shape both biological systems and human lives. This perspective informs her approach to neuroendocrinology, where dynamic processes unfold over time and are closely linked to lived experience.",
-      "Beyond the lab, Su is a daughter, sister, wife, mother of two, and a friend and colleague. She values the richness of these roles and the perspectives they bring, recognising that both science and life are shaped not in isolation, but through connection, mentorship, and shared experience. In her spare time, she enjoys baking, cooking — especially Korean cuisine — walking, playing badminton, and reading comics. She also has a deep affection for animals, particularly dogs and cats.",
+      "Her scientific perspective is grounded in the concept embodied by natura non facit saltus - nature does not make leaps - and that small, gradual changes shape both biological systems and human lives. This perspective informs her approach to neuroendocrinology, where dynamic processes unfold over time and are closely linked to lived experience.",
+      "Beyond the lab, Su is a daughter, sister, wife, mother of two, and a friend and colleague. She values the richness of these roles and the perspectives they bring, recognising that both science and life are shaped not in isolation, but through connection, mentorship, and shared experience. In her spare time, she enjoys baking, cooking - especially Korean cuisine - walking, playing badminton, and reading comics. She also has a deep affection for animals, particularly dogs and cats.",
     ],
     color: T.navy,
     // email: ["sh413", "st-andrews.ac.uk"].join("@"),
@@ -56,7 +56,7 @@ export const TEAM = [
     slug: "laura-kibedi-varga",
     name: "Laura Kibédi-Varga",
     role: "Internship Student",
-    categories: ["Researcher"],
+    categories: ["Researcher", "Student"],
     bio: [
       "Laura joined us to explore the role of dynorphin in kisspeptin neuron synchronisation and its impact on reproductive hormone regulation. Having been awarded the StARIS internship to work in the lab, she is excited to contribute to this research and deepen her understanding of neuroendocrine mechanisms. She will begin an MPhil in Clinical Neurosciences at the University of Cambridge next year, and sees this experience as an important step in preparing for a PhD later in her academic journey.",
     ],
@@ -66,6 +66,37 @@ export const TEAM = [
       "The role of dynorphin in kisspeptin neuron synchronisation and its impact on reproductive hormone regulation",
     // alumni: true, joined: "YYYY", left: "YYYY",
   },
+  {
+    initials: "ED",
+    slug: "emma-dawson-intern",
+    name: "Emma Dawson",
+    role: "Internship Student",
+    categories: ["Researcher", "Student"],
+    bio: [
+      "Together with Mimi, Emma is working to investigate the distribution of GHRH and kisspeptin neurons across early and adult stages in female mice using RNAscope.",
+    ],
+    color: "#6a7a8a",
+    photo: emmaDawson,
+    project:
+      "Investigating pubertal changes of GHRH & Kisspeptin neurons in the arcuate nucleus of female mice",
+  },
+  {
+    initials: "SS",
+    slug: "steven-seo",
+    name: "Steven Seo",
+    role: "Operations and Data Manager",
+    categories: ["Staff"],
+    bio: [
+      "Steven serves as our Operations and Data Manager, facilitating the smooth execution of laboratory functions. With a distinct academic background spanning Information Science, Pharmacy, and Theology, he provides the data-driven insights and technical support essential to our research environment.",
+      "His recent contributions include developing a highly customised mouse colony management system and implementing automated data analysis pipelines. Beyond operational support, Steven is integrating advanced AI technologies into all aspects of the research cycle, actively refining the lab's overall workflow and enhancing the reliability of our technical infrastructure.",
+    ],
+    color: "#6a7a8a",
+    photo: stevenSeo,
+    // project: "",
+    // alumni: true, joined: "YYYY", left: "YYYY",
+  },
+
+  // ── Alumni ──────────────────────────────────────────
   {
     initials: "HC",
     slug: "hamish-campbell",
@@ -78,7 +109,9 @@ export const TEAM = [
     color: "#6a7a8a",
     photo: hamishCampbell,
     project: "Validation of an ultra-sensitive ELISA for mouse GH",
-    // alumni: true, joined: "YYYY", left: "YYYY",
+    alumni: true,
+    joined: "2025",
+    left: "2026",
   },
   {
     initials: "BC",
@@ -92,7 +125,9 @@ export const TEAM = [
     color: "#6a7a8a",
     photo: brynCarney,
     project: "Validation of an ultra-sensitive ELISA for mouse GH",
-    // alumni: true, joined: "YYYY", left: "YYYY",
+    alumni: true,
+    joined: "2025",
+    left: "2026",
   },
   {
     initials: "ED",
@@ -107,7 +142,9 @@ export const TEAM = [
     photo: emmaDawson,
     project:
       "Investigating pubertal changes of GHRH & Kisspeptin neurons in the arcuate nucleus of female mice",
-    // alumni: true, joined: "YYYY", left: "YYYY",
+    alumni: true,
+    joined: "2025",
+    left: "2026",
   },
   {
     initials: "MF",
@@ -122,22 +159,17 @@ export const TEAM = [
     photo: mimiFoglia,
     project:
       "Investigating pubertal changes of GHRH & Kisspeptin neurons in the arcuate nucleus of female mice",
-    // alumni: true,
-    // joined: "2023",
-    // left: "2026",
+    alumni: true,
+    joined: "2025",
+    left: "2026",
   },
-  {
-    initials: "SS",
-    slug: "steven-seo",
-    name: "Steven Seo",
-    role: "Operations and Data Manager",
-    categories: ["Staff"],
-    bio: [
-      "Steven is our Operations and Data Manager, overseeing the smooth execution of all lab functions. With a distinct academic background spanning Information Science, Pharmacy, and Theology, he brings a truly unique perspective to our operations, equipping our team with the data-driven insights and robust support needed to lead in our field.",
-    ],
-    color: "#6a7a8a",
-    photo: stevenSeo,
-    // project: "",
-    // alumni: true, joined: "YYYY", left: "YYYY",
-  },
+];
+
+const surname = (name) => name.trim().split(" ").at(-1);
+
+export const TEAM_SORTED = [
+  ...TEAM.filter((m) => m.isPI),
+  ...TEAM.filter((m) => !m.isPI && !m.alumni).sort((a, b) =>
+    surname(a.name).localeCompare(surname(b.name)),
+  ),
 ];
