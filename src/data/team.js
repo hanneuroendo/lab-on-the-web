@@ -73,7 +73,7 @@ export const TEAM = [
     role: "Internship Student",
     categories: ["Researcher", "Student"],
     bio: [
-      "Together with Mimi, Emma is working to investigate the distribution of GHRH and kisspeptin neurons across early and adult stages in female mice using RNAscope.",
+      "Emma is here to explore how GHRH and kisspeptin neurons are distributed across early and adult stages in female mice using RNAscope. Her internship is funded by the British Society for Neuroendocrinology Undergraduate Student Laboratory Experience Grant, and she looks forward to gaining hands-on research experience and building her knowledge of neuroendocrine mechanism.",
     ],
     color: "#6a7a8a",
     photo: emmaDawson,

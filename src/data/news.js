@@ -16,6 +16,13 @@ export const NEWS_TAGS = [
 
 export const NEWS = [
   {
+    date: "May 2026",
+    tags: ["Funding"],
+    classes: ["tag-funding", "tag-award"],
+    title: "Awarded a BSN Undergraduate Student Laboratory Experience Grant",
+    body: "We are delighted to have been awarded the British Society for Neuroendocrinology Undergraduate Student Laboratory Experience Grant, which funds undergraduate and recent graduates to undertake a supervised research placement.",
+  },
+  {
     date: "February 2026",
     tags: ["Funding", "Award"],
     classes: ["tag-funding", "tag-award"],
