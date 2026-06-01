@@ -22,6 +22,7 @@ import mimiFoglia from "../assets/members/mimi-foglia.jpg";
 import brynCarney from "../assets/members/bryn-carney.jpg";
 import stevenSeo from "../assets/members/steven-seo.jpg";
 import lauraVarga from "../assets/members/laura-varga.jpg";
+import linQian from "../assets/members/lin-qian.jpg";
 
 export const TEAM_CATEGORIES = [
   "All",
@@ -50,6 +51,22 @@ export const TEAM = [
     // project: "",
     isPI: true,
     photo: suYoungHan,
+  },
+  {
+    initials: "LQ",
+    slug: "lin-qian",
+    name: "Lin Qian",
+    role: "Research Assistant",
+    categories: ["Researcher", "Staff"],
+    bio: [
+      "Lin is a Research Assistant in the Han Lab. After completing biomedical research projects at Imperial College London, she developed a strong interest in neuroendocrinology.",
+      "Lin joined the lab to further research experience and deepen understanding of neuroendocrine regulation, while building the skills needed for her future career as an independent researcher.",
+    ],
+    color: "#6a7a8a",
+    photo: linQian,
+    // project:
+    //   "The role of dynorphin in kisspeptin neuron synchronisation and its impact on reproductive hormone regulation",
+    // alumni: true, joined: "YYYY", left: "YYYY",
   },
   {
     initials: "LV",
@@ -88,7 +105,7 @@ export const TEAM = [
     categories: ["Staff"],
     bio: [
       "Steven serves as our Operations and Data Manager, facilitating the smooth execution of laboratory functions. With a distinct academic background spanning Information Science, Pharmacy, and Theology, he provides the data-driven insights and technical support essential to our research environment.",
-      "His recent contributions include developing a highly customised mouse colony management system and implementing automated data analysis pipelines. Beyond operational support, Steven is integrating advanced AI technologies into all aspects of the research cycle, actively refining the lab's overall workflow and enhancing the reliability of our technical infrastructure.",
+      "His recent contributions include developing HATS (Hanlab Animal Tracking System), a highly customised mouse colony management system, and implementing automated data analysis pipelines. Beyond operational support, Steven is integrating advanced AI technologies into all aspects of the research cycle, actively refining the lab's overall workflow and enhancing the reliability of our technical infrastructure.",
     ],
     color: "#6a7a8a",
     photo: stevenSeo,
