@@ -81,7 +81,7 @@ export const TEAM = [
     photo: lauraVarga,
     project:
       "The role of dynorphin in kisspeptin neuron synchronisation and its impact on reproductive hormone regulation",
-    // alumni: true, joined: "YYYY", left: "YYYY",
+    alumni: true, joined: "2026", left: "2026",
   },
   {
     initials: "ED",
@@ -127,7 +127,7 @@ export const TEAM = [
     photo: hamishCampbell,
     project: "Validation of an ultra-sensitive ELISA for mouse GH",
     alumni: true,
-    joined: "2025",
+    joined: "2026",
     left: "2026",
   },
   {
@@ -143,7 +143,7 @@ export const TEAM = [
     photo: brynCarney,
     project: "Validation of an ultra-sensitive ELISA for mouse GH",
     alumni: true,
-    joined: "2025",
+    joined: "2026",
     left: "2026",
   },
   {
@@ -160,7 +160,7 @@ export const TEAM = [
     project:
       "Investigating pubertal changes of GHRH & Kisspeptin neurons in the arcuate nucleus of female mice",
     alumni: true,
-    joined: "2025",
+    joined: "2026",
     left: "2026",
   },
   {
@@ -177,7 +177,7 @@ export const TEAM = [
     project:
       "Investigating pubertal changes of GHRH & Kisspeptin neurons in the arcuate nucleus of female mice",
     alumni: true,
-    joined: "2025",
+    joined: "2026",
     left: "2026",
   },
 ];
