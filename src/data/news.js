@@ -17,6 +17,13 @@ export const NEWS_TAGS = [
 export const NEWS = [
   {
     date: "May 2026",
+    tags: ["Lab News"],
+    classes: ["tag-lab"],
+    title: "Welcome to our new Research Assistant",
+    body: "Lin Qian has joined the Han Lab as a Research Assistant. She comes to us following biomedical research projects at Imperial College London, and we look forward to her contributions to our work on neuroendocrine regulation.",
+  },
+  {
+    date: "May 2026",
     tags: ["Funding"],
     classes: ["tag-funding", "tag-award"],
     title: "Awarded a BSN Undergraduate Student Laboratory Experience Grant",
