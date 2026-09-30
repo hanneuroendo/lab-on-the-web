@@ -81,7 +81,9 @@ export const TEAM = [
     photo: lauraVarga,
     project:
       "The role of dynorphin in kisspeptin neuron synchronisation and its impact on reproductive hormone regulation",
-    alumni: true, joined: "2026", left: "2026",
+    alumni: true,
+    joined: "2026",
+    left: "2026",
   },
   {
     initials: "ED",
@@ -96,15 +98,18 @@ export const TEAM = [
     photo: emmaDawson,
     project:
       "Investigating pubertal changes of GHRH & Kisspeptin neurons in the arcuate nucleus of female mice",
+    alumni: true,
+    joined: "2026",
+    left: "2026",
   },
   {
     initials: "SS",
     slug: "steven-seo",
     name: "Steven Seo",
-    role: "Operations and Data Manager",
+    role: "Research Data Engineer",
     categories: ["Staff"],
     bio: [
-      "Steven serves as our Operations and Data Manager, facilitating the smooth execution of laboratory functions. With a distinct academic background spanning Information Science, Pharmacy, and Theology, he provides the data-driven insights and technical support essential to our research environment.",
+      "Steven serves as our Research Data Engineer, facilitating the smooth execution of laboratory functions. With a distinct academic background spanning Information Science, Pharmacy, and Theology, he provides the data-driven insights and technical support essential to our research environment.",
       "His recent contributions include developing HATS (Hanlab Animal Tracking System), a highly customised mouse colony management system, and implementing automated data analysis pipelines. Beyond operational support, Steven is integrating advanced AI technologies into all aspects of the research cycle, actively refining the lab's overall workflow and enhancing the reliability of our technical infrastructure.",
     ],
     color: "#6a7a8a",
@@ -142,23 +147,6 @@ export const TEAM = [
     color: "#6a7a8a",
     photo: brynCarney,
     project: "Validation of an ultra-sensitive ELISA for mouse GH",
-    alumni: true,
-    joined: "2026",
-    left: "2026",
-  },
-  {
-    initials: "ED",
-    slug: "emma-dawson",
-    name: "Emma Dawson",
-    role: "Undergraduate Student",
-    categories: ["Student"],
-    bio: [
-      "Together with Mimi, Emma is working to investigate the distribution of GHRH and kisspeptin neurons across early and adult stages in female mice using RNAscope.",
-    ],
-    color: "#6a7a8a",
-    photo: emmaDawson,
-    project:
-      "Investigating pubertal changes of GHRH & Kisspeptin neurons in the arcuate nucleus of female mice",
     alumni: true,
     joined: "2026",
     left: "2026",
