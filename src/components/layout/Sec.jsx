@@ -1,9 +1,9 @@
 import { T, F, CONTAINER_MAX_WIDTH } from "../../constants";
 
-export function Sec({ children, bg = T.offWhite, style = {}, id }) {
+export function Sec({ children, bg = T.offWhite, style = {}, id, maxWidth = CONTAINER_MAX_WIDTH }) {
   return (
     <section id={id} style={{ background: bg, padding: "80px 0", ...style }}>
-      <div style={{ maxWidth: CONTAINER_MAX_WIDTH, margin: "0 auto", padding: "0 32px" }}>
+      <div style={{ maxWidth, margin: "0 auto", padding: "0 32px" }}>
         {children}
       </div>
     </section>

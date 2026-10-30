@@ -481,6 +481,24 @@ hr.subtle-dark {
   top: 90px;
 }
 
+/* Logo strip — one line on wide screens, centred wrapping rows below.
+   Logos keep their equal-area size; only the gaps change. */
+@media (max-width: 1100px) {
+  .logo-row {
+    flex-wrap: wrap;
+    justify-content: center !important;
+    gap: 32px 48px !important;
+  }
+  .logo-row img {
+    max-width: 100% !important;
+  }
+}
+@media (max-width: 480px) {
+  .logo-row {
+    gap: 24px 32px !important;
+  }
+}
+
 /* Mobile responsive */
 @media (max-width: 768px) {
   .hide-mobile {
