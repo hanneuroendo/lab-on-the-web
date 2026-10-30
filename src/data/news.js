@@ -16,6 +16,13 @@ export const NEWS_TAGS = [
 
 export const NEWS = [
   {
+    date: "October 2026",
+    tags: ["Talk"],
+    classes: ["tag-talk"],
+    title: "Invited Talk - GroPro 2026, Querétaro, Mexico",
+    body: "Dr Han was invited to speak at GroPro 2026, the 2nd Growth Hormone & Prolactin Meeting, held in Querétaro, Mexico. The meeting brings together scientists and clinicians from around the world to discuss endocrine axis regulation, neuroendocrine circuits, metabolic physiology, pituitary tumours and emerging clinical perspectives.",
+  },
+  {
     date: "May 2026",
     tags: ["Lab News"],
     classes: ["tag-lab"],
