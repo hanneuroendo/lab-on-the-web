@@ -109,8 +109,8 @@ export const TEAM = [
     role: "Research Data Engineer",
     categories: ["Staff"],
     bio: [
-      "Steven serves as our Research Data Engineer, facilitating the smooth execution of laboratory functions. With a distinct academic background spanning Information Science, Pharmacy, and Theology, he provides the data-driven insights and technical support essential to our research environment.",
-      "His recent contributions include developing HATS (Hanlab Animal Tracking System), a highly customised mouse colony management system, and implementing automated data analysis pipelines. Beyond operational support, Steven is integrating advanced AI technologies into all aspects of the research cycle, actively refining the lab's overall workflow and enhancing the reliability of our technical infrastructure.",
+      "Steven serves as our Research Data Engineer, integrating advanced AI technologies into all aspects of the research cycle. In this role, he actively refines the lab's overall workflow and enhances the reliability of our technical infrastructure. With a unique academic background spanning Information Science, Pharmacy, and Theology, he provides the data-driven insights and technical support essential to our research environment.",
+      "His recent contributions include developing HATS (Hanlab Analysis and Tracking System), a fully customised platform that combines mouse colony management with automated data analysis for ELISA, while additional analysis modules for fibre photometry, Miniscope, and RNAscope are currently under development.",
     ],
     color: "#6a7a8a",
     photo: stevenSeo,
